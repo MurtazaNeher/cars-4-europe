@@ -24,6 +24,11 @@
     src: url(/assets/fonts/GothamBook.ttf);
 }
 
+@font-face {
+    font-family: temp;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
 body {
     font-family: var(--gotham-book);
     position: relative;
@@ -246,6 +251,7 @@ nav .btn img {
 #header {
     background-color: var(--p-black);
     position: relative;
+    height: 100vh;
 }
 
 #header img {
@@ -378,6 +384,7 @@ nav .btn img {
     border-top: 5px solid var(--m-blue);
     background-color: #fff;
     margin-bottom: 40px;
+    transition: all 0.2s;
 }
 
 .p-card .img-sec {
@@ -392,6 +399,21 @@ nav .btn img {
 .p-card .details-sec {
     width: 50%;
     padding: 25px;
+}
+
+.p-card .down-div .arrow-btn {
+    transition: all 0.2s;
+}
+
+.p-card:hover .arrow-btn {
+    /* transform: rotate(270deg); */
+    transform: rotate(-0.25turn);
+    cursor: pointer;
+}
+
+.p-card:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .p-card .details-sec .title,
@@ -605,8 +627,3 @@ nav .btn img {
     justify-content: flex-end;
     color: #a0a0ab;
 }
-
-
-/* .footer .copyright .col-md-auto {
-    margin-left: 100px;
-} */
