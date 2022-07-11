@@ -57,22 +57,23 @@
         </div>
 
         <div class="container floating-div">
+
             <div class="row">
-                <h1>Jakiego auta szukasz?</h1>
+                <h1 class="pb-20">Jakiego auta szukasz?</h1>
 
                 <div class="col-12 tabs">
-                    <button>
-              <p class="lb-color">
+                    <button id="header-tab1" onclick="switchHeaderForm(1)" class="header-tab-active">
+              <p >
                 <img src="assets/images/car logo.svg" alt="" /> Osobowe
               </p>
             </button>
-                    <button>
+                    <button id="header-tab2" onclick="switchHeaderForm(2)" class="header-tab-inactive">
               <p><img src="assets/images/truck logo.svg" alt="" /> Dostawcze</p>
             </button>
                 </div>
 
                 <div class="col-12">
-                    <form action="">
+                    <form action="" id="header-form1">
                         <div class="row">
                             <div class="label-input-div col-6">
                                 <label for="company">Marka</label>
@@ -101,6 +102,49 @@
                     <option value="">lorem2</option>
                     <option value="">lorem3</option>
                     <option value="">lorem4</option>
+                  </select>
+                            </div>
+
+                            <div class="label-input-div col-6">
+                                <label for="product-id">ID ogłoszenia</label>
+                                <input type="text" id="product-id" placeholder="Wpisz ID" />
+                            </div>
+
+                            <div class="col-12 submit-form-div">
+                                <p>Wyszukiwanie zaawansowane</p>
+                                <button class="p-btn">Znajdź pojazd</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="" id="header-form2">
+                        <div class="row">
+                            <div class="label-input-div col-6">
+                                <label for="company">Marka</label>
+                                <select name="" id="company">
+                    <option value="">lorem10</option>
+                    <option value="">lorem20</option>
+                    <option value="">lorem30</option>
+                    <option value="">lorem40</option>
+                  </select>
+                            </div>
+
+                            <div class="label-input-div col-6">
+                                <label for="model">Model</label>
+                                <select name="" id="model" placeholder="Wybierz">
+                    <option value="">lorem10</option>
+                    <option value="">lorem20</option>
+                    <option value="">lorem30</option>
+                    <option value="">lorem40</option>
+                  </select>
+                            </div>
+
+                            <div class="label-input-div col-6">
+                                <label for="type">Rodzaj paliwa</label>
+                                <select name="" id="type" placeholder="Wybierz">
+                    <option value="">lorem10</option>
+                    <option value="">lorem20</option>
+                    <option value="">lorem30</option>
+                    <option value="">lorem40</option>
                   </select>
                             </div>
 

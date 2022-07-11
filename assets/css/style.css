@@ -273,6 +273,10 @@ nav .btn img {
     padding: 30px;
 }
 
+#header .floating-div h1 {
+    font-size: 1.7rem;
+}
+
 #header .floating-div .tabs button {
     background: none !important;
     border: none;
@@ -281,6 +285,7 @@ nav .btn img {
 
 #header .floating-div .tabs button p {
     margin: 0px;
+    font-size: 15px;
 }
 
 #header .floating-div .tabs button img {
@@ -298,6 +303,7 @@ nav .btn img {
     align-items: flex-start;
     justify-content: center;
     margin: 8px 0px;
+    font-size: 15px;
 }
 
 .floating-div .label-input-div input,
@@ -314,6 +320,30 @@ nav .btn img {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px 5px;
+}
+
+#header-form2 {
+    display: none;
+}
+
+.header-tab-active {
+    color: var(--l-blue);
+    border-top: 1px solid #DADBEF !important;
+    border-left: 1px solid #DADBEF !important;
+    border-right: 1px solid #DADBEF !important;
+}
+
+.header-tab-active img {
+    filter: grayscale(0);
+}
+
+.header-tab-inactive {
+    color: var(--p-black);
+    border: none;
+}
+
+.header-tab-inactive img {
+    filter: grayscale(1);
 }
 
 
