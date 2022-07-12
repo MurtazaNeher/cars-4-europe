@@ -987,6 +987,7 @@ nav .btn img {
 #pc-contact-us {
     background: url(/assets/images/pc-form-bg.svg);
     color: var(--p-white);
+    background-size: cover
 }
 
 .pc-contact-header h1 {
@@ -1012,7 +1013,7 @@ nav .btn img {
 #pc-contact-us .pc-contact-form input,
 #pc-contact-us .pc-contact-form textarea {
     background-color: var(--p-white);
-    padding: 12px 10px;
+    padding: 15px 10px;
     margin: 15px 0px;
     width: 85%;
     border: none;
