@@ -92,6 +92,13 @@ p {
     align-items: center;
 }
 
+.h-flex-e {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -251,11 +258,11 @@ nav .btn img {
 #header {
     background-color: var(--p-black);
     position: relative;
-    height: 100vh;
 }
 
 #header img {
-    max-width: 100%;
+    width: 100%;
+    /* max-width: 100%; */
 }
 
 #header .col-5 {
@@ -356,7 +363,7 @@ nav .btn img {
 /* Main Section */
 
 #main {
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 50px 0px;
     background-color: var(--p-white)
 }
 
@@ -371,7 +378,7 @@ nav .btn img {
 #main .c-container {
     display: flex;
     align-items: center;
-    padding: 100px 0px;
+    padding: 100px 0px 0px;
     justify-content: center;
     flex-direction: column;
 }
@@ -387,6 +394,15 @@ nav .btn img {
     width: 120px;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.dropdown img {
+    transition: all 0.2s ease;
+}
+
+.dropdown:hover img {
+    transform: rotate(-0.25turn);
+    filter: invert(100%) sepia(17%) saturate(0%) hue-rotate(51deg) brightness(150%) contrast(102%);
 }
 
 .dropdown-content {
@@ -537,6 +553,37 @@ nav .btn img {
 
 .p-card .link-sec .arrow-btn {
     width: 30px;
+}
+
+
+/* Pagination Bar */
+
+.pagination-bar {
+    list-style: none;
+    width: 85%;
+}
+
+.pagination-bar li {
+    padding: 10px;
+}
+
+.pagination-bar li:hover {
+    cursor: pointer;
+}
+
+.pagination-bar .page-active {
+    color: var(--l-blue) !important;
+}
+
+.pagination-bar .next-btn {
+    background-color: var(--l-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    padding: 20px;
+    margin-left: 20px;
 }
 
 
