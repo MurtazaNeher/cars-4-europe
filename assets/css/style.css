@@ -99,6 +99,13 @@ p {
     align-items: center;
 }
 
+.v-flex-e {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -183,6 +190,10 @@ p {
     padding-bottom: 70px;
 }
 
+.pb-100 {
+    padding-bottom: 100px;
+}
+
 .pt-10 {
     padding-top: 10px;
 }
@@ -211,10 +222,14 @@ p {
     padding-top: 70px;
 }
 
+.pt-100 {
+    padding-top: 100px;
+}
+
 
 /* Navbar */
 
-.navbar {
+.navbar-abs {
     position: absolute;
     top: 0;
     width: 100%;
@@ -391,22 +406,22 @@ nav .btn img {
     /* transition: all 0.2s; */
 }
 
-.dropbtn {
+#main .dropbtn {
     width: 120px;
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.dropdown img {
+#main .dropdown img {
     transition: all 0.2s ease;
 }
 
-.dropdown:hover img {
+#main .dropdown:hover img {
     transform: rotate(-0.25turn);
     filter: invert(100%) sepia(17%) saturate(0%) hue-rotate(51deg) brightness(150%) contrast(102%);
 }
 
-.dropdown-content {
+#main .dropdown-content {
     display: none;
     position: absolute;
     background-color: var(--l-blue);
@@ -420,25 +435,25 @@ nav .btn img {
 
 /* Links inside the dropdown */
 
-.dropdown-content a {
+#main .dropdown-content a {
     color: var(--p-white);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
+#main .dropdown:hover .dropdown-content {
     display: block;
 }
 
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
-.dropdown:hover {
+#main .dropdown:hover {
     background-color: var(--l-blue);
 }
 
-.dropdown:hover .dropbtn {
+#main .dropdown:hover .dropbtn {
     color: var(--p-white) !important;
 }
 
@@ -730,4 +745,283 @@ nav .btn img {
 
 #pc-main {
     background-color: var(--p-white);
+    padding: 50px 0px;
+}
+
+
+/* Breadcrumb */
+
+.pc-breadcrumb {
+    margin-bottom: 25px;
+}
+
+.pc-breadcrumb .bc-back-btn {
+    text-decoration: none;
+    color: var(--m-blue);
+    padding: 0;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.pc-breadcrumb .bc-back-btn img {
+    width: 8px;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.pc-breadcrumb .bc-btn {
+    text-decoration: none;
+    color: var(--m-blue);
+    text-transform: capitalize;
+    padding: 0;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.pc-breadcrumb .bc-arrow {
+    padding-left: 5px;
+}
+
+.pc-breadcrumb .bc-arrow img {
+    width: 7px;
+}
+
+.pc-content-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-content-div .id {
+    color: var(--m-blue);
+}
+
+.pc-content-div .pc-title {
+    font-size: 1.7rem;
+    margin: 18px 0px;
+}
+
+.pc-content-div .pc-det {
+    list-style: none;
+    padding: 22px 0px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #212ea027;
+    border-bottom: 1px solid #212ea027;
+    margin: 40px 0px 20px;
+}
+
+.pc-content-div .pc-det li {
+    font-size: 15px;
+}
+
+.pc-content-div .pc-det .dot {
+    margin: 0px 10px;
+}
+
+.pc-content-div .download-btn {
+    color: var(--p-green);
+}
+
+.pc-content-div .download-btn,
+.pc-content-div .fav {
+    margin-right: 25px;
+}
+
+.pc-content-div .download-btn a,
+.pc-content-div .fav a {
+    color: var(--p-green);
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.pc-content-div .price {
+    color: var(--p-black);
+    text-decoration: none;
+}
+
+.pc-content-div .login-div .login-btn {
+    text-decoration: none;
+    color: var(--l-blue);
+    font-size: 18px;
+}
+
+.pc-content-div .login-div p {
+    margin: 0px 15px;
+    font-size: 18px;
+}
+
+.pc-content-div .p-btn {
+    background-color: var(--p-green);
+    width: max-content;
+    margin: 25px 0px;
+    color: var(--p-black);
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pc-content-div .p-btn img {
+    width: 15px;
+    margin: 0px 10px;
+}
+
+
+/* offcanvas */
+
+.offcanvas.offcanvas-start {
+    right: 0 !important;
+    left: auto !important;
+    transform: none !important;
+}
+
+.offcanvas {
+    transition: none;
+    width: 43vw !important;
+    padding: 30px 50px 0px;
+    background-color: var(--p-white) !important;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #212ea02a;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.offcanvas-header button {
+    border: none;
+    background: none;
+}
+
+.offcanvas-header button img {
+    width: 25px;
+    height: 25px;
+}
+
+.offcanvas-body .content {
+    width: 100%;
+}
+
+.offcanvas form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.offcanvas form input {
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.offcanvas .p-btn {
+    padding: 10px 20px;
+}
+
+.pc-main-info {
+    padding: 40px 0px 0px;
+    margin-top: 40px;
+    border-top: 1px solid #212ea02a;
+}
+
+.pc-main-info .col-4 {
+    margin: 0;
+    padding: 0;
+}
+
+.pc-main-info ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0;
+    border-right: 1px solid #212ea02a;
+    padding-left: 25px;
+}
+
+.pc-main-info ul li {
+    width: 50%;
+}
+
+
+/* Equipment */
+
+#pc-equip {
+    padding: 100px 0px 30px;
+}
+
+.pc-equip-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #212ea02a;
+    margin-bottom: 10px;
+}
+
+.pc-equip-con {
+    padding: 40px 0px;
+}
+
+.pc-equip-con ul {
+    list-style: none;
+    padding: 0;
+    border-right: 1px solid #212ea018;
+}
+
+.pc-equip-con ul li img {
+    width: 12px;
+    margin-right: 12px;
+}
+
+.pc-equip-con ul li {
+    padding: 5px 0px;
+}
+
+.pc-equip-con ul li:hover {
+    cursor: pointer;
+}
+
+
+/* PC Contact Us */
+
+#pc-contact-us {
+    background: url(/assets/images/pc-form-bg.svg);
+    color: var(--p-white);
+}
+
+.pc-contact-header h1 {
+    padding: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #636dc528;
+}
+
+.pc-contact-form-container {
+    padding: 30px 0px;
+}
+
+.pc-contact-form-container .email {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--p-white);
+}
+
+#pc-contact-us .pc-contact-form {
+    border-left: 2px solid #636dc528;
+}
+
+#pc-contact-us .pc-contact-form input,
+#pc-contact-us .pc-contact-form textarea {
+    background-color: var(--p-white);
+    padding: 12px 10px;
+    margin: 15px 0px;
+    width: 85%;
+    border: none;
+}
+
+#pc-contact-us .pc-contact-form .p-btn {
+    padding: 10px 20px;
+    color: var(--p-black);
+    background-color: var(--p-green);
+    margin: 10px 0px;
+    width: auto;
 }

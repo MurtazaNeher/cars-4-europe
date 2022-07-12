@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product | Cars 4 Europe</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class=" navbar  navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/images/brand logo.svg" alt="Cars 4 Europe" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,21 +48,391 @@
     <section id="pc-main">
         <div class="container">
             <div class="row">
-                <div class="col h-flex breadcrumb">
+                <div class="col h-flex pc-breadcrumb">
                     <a href="" class="bc-back-btn">
                         <img src="assets/images/left arrow.svg" alt=""> Wróć
                     </a>
-                    <a href="" class="bc-btn"></a>
-                    <a href="" class="bc-btn"></a>
-                    <a href="" class="bc-btn"></a>
+                    <a href="" class="bc-btn">Osobowe</a>
+                    <span class="bc-arrow">
+                        <img src="assets/images/bc-right-arrow.svg" alt="">
+                    </span>
+                    <a href="" class="bc-btn">Lexus</a>
+                    <span class="bc-arrow">
+                        <img src="assets/images/bc-right-arrow.svg" alt="">
+                    </span>
+                    <a href="" class="bc-btn">RC</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6"></div>
-                <div class="col-6"></div>
+                <div class="col-6">
+
+                </div>
+
+
+                <div class="col-5 offset-1 pc-content-div">
+
+                    <p class="id">ID: 234512</p>
+                    <h1 class="pc-title">Lexus RC 5.0 463KM AT 2WD</h1>
+
+                    <ul class="pc-det">
+                        <li>2022</li>
+                        <li class="dot"><img src="assets/images/dot.svg" alt=""></li>
+                        <li>Diesel</li>
+                        <li class="dot"><img src="assets/images/dot.svg" alt=""></li>
+                        <li>1 997 cm3</li>
+                        <li class="dot"><img src="assets/images/dot.svg" alt=""></li>
+                        <li>241 KM</li>
+                        <li class="dot"><img src="assets/images/dot.svg" alt=""></li>
+                        <li>142 222 km</li>
+
+                    </ul>
+
+                    <div class="h-flex-s">
+                        <div class="download-btn"><img src="assets/images/green down arrow.svg" alt=""> <a href="">Pobierz ofertę</a> </div>
+
+                        <div class="fav">
+                            <img src="assets/images/star.svg" alt="">
+                            <a href="">Obserwuj</a>
+                        </div>
+
+                    </div>
+
+                    <a href="" class="price mt-50 mb-10">
+                        Cena netto
+                    </a>
+
+                    <div class="h-flex-s login-div">
+                        <a href="" class="login-btn">Zaloguj się</a>
+                        <p>lub</p>
+                        <a href="" class="login-btn">Zarejestruj</a>
+                    </div>
+
+                    <button class="p-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Rezerwuj pojazd <img src="assets/images/black arrow.svg" alt="">
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title" id="offcanvasExampleLabel">Wypełnij formularz</h1>
+                            <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src="assets/images/blue close btn.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body mt-30 mb-10">
+                            <div class="content">
+                                <p>
+                                    Dziękujemy za zainteresowanie naszą ofertą. Aby zarezerwować samochód proszę wypełnić poniższy formularz i kliknąć "Zarezerwuj"
+                                </p>
+                            </div>
+
+                            <form action="
+                            ">
+                                <input type="text" class="mb-20 mt-20">
+                                <input type="text" placeholder="Adres email" class="mb-20">
+                                <input type="text" placeholder="Numer telefonu" class="mb-20">
+                                <input type="text" placeholder="Wiadomość" style="padding: 20px;">
+
+                                <button class="p-btn">Zarezerwuj</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pc-main-info">
+
+            <div class="row">
+                <div class="col-4">
+                    <ul style="padding: 5px">
+                        <li>Marka</li>
+                        <li>Lexus</li>
+                        <li>Model</li>
+                        <li>RC</li>
+                        <li>Rok produkcji</li>
+                        <li>2018</li>
+                        <li>Rodzaj paliwa</li>
+                        <li>Benzyna</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>Marka</li>
+                        <li>Lexus</li>
+                        <li>Model</li>
+                        <li>RC</li>
+                        <li>Rok produkcji</li>
+                        <li>2018</li>
+                        <li>Rodzaj paliwa</li>
+                        <li>Benzyna</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul style="border: none;">
+                        <li>Marka</li>
+                        <li>Lexus</li>
+                        <li>Model</li>
+                        <li>RC</li>
+                        <li>Rok produkcji</li>
+                        <li>2018</li>
+                        <li>Rodzaj paliwa</li>
+                        <li>Benzyna</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <section id="pc-equip">
+        <div class="container pc-equip-header">
+            <div class="row">
+                <h1>Wyposażenie </h1>
+            </div>
+        </div>
+
+        <div class="container pc-equip-con">
+            <div class="row">
+
+                <div class="col-4">
+                    <ul>
+                        <li><img src="assets/images/green up arrow.svg" alt="">ABS</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Alufelgi </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Centralny Zamek</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Czujnik martwego pola </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">ESP</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektryczne szyby - tył </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Immobilizer</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Podgrzewane fotele przód </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Poduszka powietrzna kierowcy</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Poduszki kurtynowe </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">System Start&Stop</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Czujniki parkowania tył</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektryczne szyby - przód</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektrycznie regulowane lusterka</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Tempomat aktywny</li>
+
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li><img src="assets/images/green up arrow.svg" alt="">ABS</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Alufelgi </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Centralny Zamek</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Czujnik martwego pola </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">ESP</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektryczne szyby - tył </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Immobilizer</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Podgrzewane fotele przód </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Poduszka powietrzna kierowcy</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Poduszki kurtynowe </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">System Start&Stop</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Czujniki parkowania tył</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektryczne szyby - przód</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektrycznie regulowane lusterka</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Tempomat aktywny</li>
+
+                    </ul>
+                </div>
+
+                <div class="col-4">
+
+                    <ul style="border: none;">
+                        <li><img src="assets/images/green up arrow.svg" alt="">ABS</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Alufelgi </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Centralny Zamek</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Czujnik martwego pola </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">ESP</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektryczne szyby - tył </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Immobilizer</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Podgrzewane fotele przód </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Poduszka powietrzna kierowcy</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Poduszki kurtynowe </li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">System Start&Stop</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Czujniki parkowania tył</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektryczne szyby - przód</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Elektrycznie regulowane lusterka</li>
+                        <li><img src="assets/images/green up arrow.svg" alt="">Tempomat aktywny</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="pc-contact-us" class="pt-100 pb-100">
+        <div class="container pc-contact-header">
+            <div class="row">
+                <h1> Skontaktuj się z nami</h1>
+            </div>
+        </div>
+
+        <div class="container pc-contact-form-container">
+
+            <div class="row">
+                <div class="col-6">
+                    <p class="mb-50">Skorzystaj z formularza lub napisz do <br> nas bezpośrednio na adres </p>
+                    <a href="" class="email">cars4europe@cars4europe.com</a>
+                </div>
+                <div class="col-6">
+
+                    <form action="" class="pc-contact-form ">
+                        <div class="v-flex-e">
+                            <input type="text" placeholder="Imię">
+                            <input type="text" placeholder="Nazwisko">
+                            <input type="text" placeholder="Email">
+
+                            <textarea name="" id="" cols="30" rows="2" placeholder="Wiadomość"></textarea>
+                            <button class="p-btn">
+                            Wyślij wiadomość
+                        </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="container">
+        <div class="marquee">
+            <section class="marquee-content">
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m1.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m2.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m3.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m4.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m5.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m6.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m7.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m8.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m9.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m10.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m11.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m12.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m13.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m14.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m15.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m16.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m17.svg" /></a>
+            </section>
+            <section class="marquee-content">
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m1.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m2.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m3.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m4.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m5.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m6.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m7.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m8.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m9.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m10.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m11.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m12.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m13.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m14.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m15.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m16.svg" /></a>
+                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m17.svg" /></a>
+            </section>
+        </div>
+    </div>
+    <!-- Available brands -->
+    <div class="container available-barnds-container pb-50">
+        <h1>Dostępne marki</h1>
+        <div class="row">
+            <ul class="available-barnds">
+                <li class="brand-li">Audi</li>
+                <li class="brand-li">BMW</li>
+                <li class="brand-li">Volkswagen</li>
+                <li class="brand-li">Opel</li>
+                <li class="brand-li">Ford</li>
+                <li class="brand-li">Mercedez-Benz</li>
+                <li class="brand-li">Renault</li>
+                <li class="brand-li">Skoda</li>
+                <li class="brand-li">Toyota</li>
+                <li class="brand-li">Peugeot</li>
+                <li class="brand-li">Citroen</li>
+                <li class="brand-li">Volvo</li>
+                <li class="brand-li">Hyundai</li>
+                <li class="brand-li">Kia</li>
+                <li class="brand-li">Nissan</li>
+                <li class="brand-li">Fiat</li>
+                <li class="brand-li">Seat</li>
+                <li class="brand-li">Mazda</li>
+                <li class="brand-li">Honda</li>
+                <li class="brand-li">Suzuki</li>
+                <li class="brand-li">Jeep</li>
+                <li class="brand-li">Dacia</li>
+                <li class="brand-li">Mitsubishi</li>
+                <li class="brand-li">chevrolet</li>
+                <li class="brand-li">Alfa Romeo</li>
+                <li class="brand-li">MINI</li>
+                <li class="brand-li">Land Rover</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-header mb-50">
+                <div class="col-sm-7">
+                    <h1>Masz jakieś pytania?</h1>
+                </div>
+                <div class="col-sm-5">
+                    <p>Masz jakiekolwiek pytania dotyczące naszego portalu? Nie wiesz, jak wybrać odpowiedni samochód? Napisz do nas — chętnie odpowiemy na wszystkie Twoje pytania.</p>
+                    <button class="btn p-btn">Napisz do nas</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="assets/images/brand logo.svg" alt="" class="mb-30">
+
+                    <div class="h-flex-sb">
+                        <p>Zmień język</p>
+                        <img src="assets/images/flag logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-5 offset-1">
+                    <ul class="footer-ul">
+                        <li>O nas</li>
+                        <li>Jak to działa?</li>
+                        <li>Kariera</li>
+                        <li>Dla komisów</li>
+                        <li>Blog</li>
+                        <li>Logowanie/rejestracja</li>
+                        <li>Oferta</li>
+                        <li>Kontakt</li>
+                        <li>Polityka prywatności</li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-2 offset-1">
+                    <a href="#" class="footer-link">cars4europe@cars4europe.com</a>
+                    <div class="h-flex-s mt-20">
+                        <img src="assets/images/instagram (1) 1.svg" alt="" class="social-icon">
+                        <img src="assets/images/facebook (1) 1.svg" alt="" class="social-icon">
+                        <img src="assets/images/linkedin (1) 1.svg" alt="" class="social-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright mt-30">
+                <div class="col-md-auto">
+                    <p>© Copyright 2022 - Cars 4 Europe</p>
+                </div>
+                <div class="col-md-auto offset-1">
+                    <p>Realizacja: AdWise</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
