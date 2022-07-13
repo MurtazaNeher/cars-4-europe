@@ -80,13 +80,17 @@
                     <form action="" id="header-form1">
                         <div class="row">
                             <div class="label-input-div col-6">
+
                                 <label for="company">Marka</label>
-                                <select name="" id="company">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
+                                <select name="" id="home-company-select" onclick="setSelectBtn()">
+                                    <option disabled selected value> -- select an option -- </option>
+                    <option value="lorem1">lorem1</option>
+                    <option value="lorem2" onclick="setSelectBtn()">lorem2</option>
+                    <option value="lorem3" onclick="setSelectBtn()">lorem3</option>
+                    <option value="lorem4" onclick="setSelectBtn()">lorem4</option>
                   </select>
+                  <span id="hcs-clear-btn" class="select-btn" onclick="clearSelect()"><img src="assets/images/select cross.svg" alt=""></span>
+                
                             </div>
 
                             <div class="label-input-div col-6">
