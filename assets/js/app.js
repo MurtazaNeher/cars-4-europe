@@ -62,11 +62,9 @@ function showRcPass() {
 
 function setSelectBtn() {
     let selectForm = document.getElementById("home-company-select");
-  if (selectForm.options[selectForm.selectedIndex] !== 0) {
 
+  if (selectForm.options[selectForm.selectedIndex].value != "0") {
     document.getElementById("hcs-clear-btn").style.display = "block";
-    selectForm.style.background = "transparent"
-
   }
 }
 function clearSelect() {
@@ -75,7 +73,6 @@ let selectForm = document.getElementById("home-company-select");
   if (selectForm.selectedIndex != 0) {
     selectForm.selectedIndex = 0;
     document.getElementById("hcs-clear-btn").style.display = "none";
-
-  }
+   }
 }
 

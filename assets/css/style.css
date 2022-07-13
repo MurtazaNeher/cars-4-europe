@@ -359,8 +359,13 @@ nav .btn img {
   top: 55%;
   width: 20px;
 }
+.select-btn:hover,select:hover{
+  cursor: pointer;
+}
 #hcs-clear-btn{
   display: none;
+  right: 18.5px;
+  background-color:var(--p-white) ;
 }
 
 .floating-div .submit-form-div {
@@ -1249,9 +1254,11 @@ input[type=checkbox]
 select{
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none; 
   background: url(/assets/images/arrow\ down\ select.svg) no-repeat;
   background-position: right 5px top 50%;
- 
+  appearance: none; 
+  border-radius: 0px !important;
 }
 
 /* Tel list */
