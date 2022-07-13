@@ -147,12 +147,15 @@
                 />
               </div>
               <div class="col-3 form-group md-group show-label">
-                <input
+                <!-- <input
                 type="text"
                 class="form-control form-control-lg"
                 id=""
                 placeholder="code"
-              />
+              /> -->
+
+              <input type="tel" id="txtPhone" class="txtbox form-control-lg" />
+           
 
               </div>
               <div class="col-md-9">
@@ -359,5 +362,33 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var code = "+91"; // Assigning value from model.
+            $('#txtPhone').val(code);
+            $('#txtPhone').intlTelInput({
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['US'],
+                separateDialCode: true
+            });
+            $('#btnSubmit').on('click', function () {
+                var code = $("#txtPhone").intlTelInput("getSelectedCountryData").dialCode;
+                var phoneNumber = $('#txtPhone').val();
+                var name = $("#txtPhone").intlTelInput("getSelectedCountryData").name;
+                alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
+            });
+        });
+    </script>
   </body>
 </html>
