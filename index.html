@@ -15,6 +15,7 @@
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 960px)" href="assets/css/responsive.css" />
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -23,35 +24,181 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-abs navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/images/brand logo.svg" alt="Cars 4 Europe" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Header -->
+    <header id="index-header">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-trans navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/images/brand logo.svg" alt="Cars 4 Europe" /></a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                    <a class="nav-link" href="#">O nas</a>
-                    <a class="nav-link" href="#">Jak to działa?</a>
-                    <a class="nav-link" href="#">Oferta</a>
-                    <a class="nav-link" href="#">Dla komisów</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Kontakt</a>
-                    <button class="btn btn-sm" type="button">
-              <img src="assets/images/person icon.svg" alt="" /> Zaloguj się
-            </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="#">O nas</a>
+                        <a class="nav-link" href="#">Jak to działa?</a>
+                        <a class="nav-link" href="#">Oferta</a>
+                        <a class="nav-link" href="#">Dla komisów</a>
+                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">Kontakt</a>
+
+                    </div>
+                </div>
+                <button class="btn btn-sm p-btn" type="button">
+                    <img src="assets/images/person icon.svg" alt="" /> Zaloguj się
+                  </button>
+            </div>
+        </nav>
+
+        <!-- Form -->
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 index-header-form-div mt-30">
+                    <div class="col-md-12">
+
+                        <h1 class="pb-20">Jakiego auta szukasz?</h1>
+                    </div>
+
+                    <div class="col-md-12 tabs">
+                        <button id="header-tab1" onclick="switchHeaderForm(1)" class="header-tab-active ">
+                            <p >
+                                <img src="assets/images/car logo.svg" alt="" /> Osobowe
+                            </p>
+                    </button>
+
+                        <button id="header-tab2" onclick="switchHeaderForm(2)" class="header-tab-inactive r-tab">
+                        <p><img src="assets/images/truck logo.svg" alt="" /> Dostawcze</p>
+                    </button>
+                    </div>
+
+                    <div class="col-md-12">
+                        <form action="" id="header-form1">
+                            <div class="row">
+                                <div class="label-input-div col-md-6">
+
+                                    <label for="company">Marka</label>
+                                    <div class="dropdown" id="index-header-d1">
+                                        <a class="lb-color dropbtn h-flex-sb" onclick="triggerDropdown()" id="index-header-d1-btn">
+                                            <p id="index-header-d1-btn-p"> Honda</p>
+                                            <img src="assets/images/arrow down select.svg" alt="" id="open-dd">
+                                            <a id="hcs-clear-btn" onclick="clearDD()"><img src="assets/images/select cross.svg" alt=""></a>
+
+                                        </a>
+                                        <div class="dropdown-content" id="index-header-d1-con">
+                                            <a onclick="setDropdownVal(`Civic`)" style="border-top:  1px solid #39379a4d;" class="pt-10">Civic</a>
+                                            <a onclick="setDropdownVal(`Accord`)">Accord</a>
+                                            <a onclick="setDropdownVal(`City`)">City</a>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <select name="" id="home-company-select" onclick="setSelectBtn()">
+                                    <option disabled selected value = "0"> -- select an option -- </option>
+                    <option value="lorem1">lorem1</option>
+                    <option value="lorem2" onclick="setSelectBtn()">lorem2</option>
+                    <option value="lorem3" onclick="setSelectBtn()">lorem3</option>
+                    <option value="lorem4" onclick="setSelectBtn()">lorem4</option>
+                  </select> -->
+                                    <span id="hcs-clear-btn" class="select-btn" onclick="clearSelect()"><img src="assets/images/select cross.svg" alt=""></span>
+
+                                </div>
+
+                                <div class="label-input-div col-md-6">
+                                    <label for="model">Model</label>
+                                    <select name="" id="model" placeholder="Wybierz">
+                    <option value="">lorem1</option>
+                    <option value="">lorem2</option>
+                    <option value="">lorem3</option>
+                    <option value="">lorem4</option>
+                  </select>
+                                </div>
+
+                                <div class="label-input-div col-md-6">
+                                    <label for="type">Rodzaj paliwa</label>
+                                    <select name="" id="type" placeholder="Wybierz">
+                    <option value="">lorem1</option>
+                    <option value="">lorem2</option>
+                    <option value="">lorem3</option>
+                    <option value="">lorem4</option>
+                  </select>
+                                </div>
+
+                                <div class="label-input-div col-md-6">
+                                    <label for="product-id">ID ogłoszenia</label>
+                                    <input type="number" id="product-id" placeholder="Wpisz ID" />
+                                </div>
+                            </div>
+
+                        </form>
+                        <form action="" id="header-form2">
+                            <div class="row">
+                                <div class="label-input-div col-md-6">
+
+                                    <label for="company">Marka</label>
+                                    <select name="" id="home-company-select" onclick="setSelectBtn()">
+                                    <option disabled selected value = "0"> -- select an option -- </option>
+                    <option value="lorem1">lorem1</option>
+                    <option value="lorem2" onclick="setSelectBtn()">lorem2</option>
+                    <option value="lorem3" onclick="setSelectBtn()">lorem3</option>
+                    <option value="lorem4" onclick="setSelectBtn()">lorem4</option>
+                  </select>
+                                    <span id="hcs-clear-btn" class="select-btn" onclick="clearSelect()"><img src="assets/images/select cross.svg" alt=""></span>
+
+                                </div>
+
+                                <div class="label-input-div col-md-6">
+                                    <label for="model">Model</label>
+                                    <select name="" id="model" placeholder="Wybierz">
+                    <option value="">lorem1</option>
+                    <option value="">lorem2</option>
+                    <option value="">lorem3</option>
+                    <option value="">lorem4</option>
+                  </select>
+                                </div>
+
+                                <div class="label-input-div col-md-6">
+                                    <label for="type">Rodzaj paliwa</label>
+                                    <select name="" id="type" placeholder="Wybierz">
+                    <option value="">lorem1</option>
+                    <option value="">lorem2</option>
+                    <option value="">lorem3</option>
+                    <option value="">lorem4</option>
+                  </select>
+                                </div>
+
+                                <div class="label-input-div col-md-6">
+                                    <label for="product-id">ID ogłoszenia</label>
+                                    <input type="text" id="product-id" placeholder="numver" />
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="row px-3">
+                        <div class="col-md-8 submit-form-div">
+                            <p class="lb-color">Wyszukiwanie zaawansowane</p>
+                        </div>
+                        <div class="col-md-4 submit-form-div">
+
+                            <button class="p-btn">Znajdź pojazd</button>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Header -->
-    <header id="header">
-        <img src="assets/images/header bg.svg" alt="" />
+        <!-- Header Overlay -->
+        <div class=" conatiner index-header-overlay">
 
-        <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-5">
                     <p class="pb-10">
@@ -61,128 +208,16 @@
                 </div>
             </div>
         </div>
-
-        <div class="container floating-div">
-
-            <div class="row">
-                <h1 class="pb-20">Jakiego auta szukasz?</h1>
-
-                <div class="col-md-12 tabs">
-                    <button id="header-tab1" onclick="switchHeaderForm(1)" class="header-tab-active">
-              <p >
-                <img src="assets/images/car logo.svg" alt="" /> Osobowe
-              </p>
-            </button>
-                    <button id="header-tab2" onclick="switchHeaderForm(2)" class="header-tab-inactive">
-              <p><img src="assets/images/truck logo.svg" alt="" /> Dostawcze</p>
-            </button>
-                </div>
-
-                <div class="col-md-12">
-                    <form action="" id="header-form1">
-                        <div class="row">
-                            <div class="label-input-div col-md-6">
-
-                                <label for="company">Marka</label>
-                                <select name="" id="home-company-select" onclick="setSelectBtn()">
-                                    <option disabled selected value = "0"> -- select an option -- </option>
-                    <option value="lorem1">lorem1</option>
-                    <option value="lorem2" onclick="setSelectBtn()">lorem2</option>
-                    <option value="lorem3" onclick="setSelectBtn()">lorem3</option>
-                    <option value="lorem4" onclick="setSelectBtn()">lorem4</option>
-                  </select>
-                  <span id="hcs-clear-btn" class="select-btn" onclick="clearSelect()"><img src="assets/images/select cross.svg" alt=""></span>
-                
-                            </div>
-
-                            <div class="label-input-div col-md-6">
-                                <label for="model">Model</label>
-                                <select name="" id="model" placeholder="Wybierz">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
-                  </select>
-                            </div>
-
-                            <div class="label-input-div col-md-6">
-                                <label for="type">Rodzaj paliwa</label>
-                                <select name="" id="type" placeholder="Wybierz">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
-                  </select>
-                            </div>
-
-                            <div class="label-input-div col-md-6">
-                                <label for="product-id">ID ogłoszenia</label>
-                                <input type="text" id="product-id" placeholder="Wpisz ID" />
-                            </div>
-                        </div>
-
-                </div>
-                </form>
-                <form action="" id="header-form2">
-                    <div class="row">
-                        <div class="label-input-div col-md-6">
-                            <label for="company">Marka</label>
-                            <select name="" id="company">
-                    <option value="">lorem10</option>
-                    <option value="">lorem20</option>
-                    <option value="">lorem30</option>
-                    <option value="">lorem40</option>
-                  </select>
-                        </div>
-
-                        <div class="label-input-div col-md-6">
-                            <label for="model">Model</label>
-                            <select name="" id="model" placeholder="Wybierz">
-                    <option value="">lorem10</option>
-                    <option value="">lorem20</option>
-                    <option value="">lorem30</option>
-                    <option value="">lorem40</option>
-                  </select>
-                        </div>
-
-                        <div class="label-input-div col-md-6">
-                            <label for="type">Rodzaj paliwa</label>
-                            <select name="" id="type" placeholder="Wybierz">
-                    <option value="">lorem10</option>
-                    <option value="">lorem20</option>
-                    <option value="">lorem30</option>
-                    <option value="">lorem40</option>
-                  </select>
-                        </div>
-
-                        <div class="label-input-div col-md-6">
-                            <label for="product-id">ID ogłoszenia</label>
-                            <input type="text" id="product-id" placeholder="Wpisz ID" />
-                        </div>
-
-
-                    </div>
-                </form>
-
-                <div class="col-md-12 submit-form-div">
-                    <p class="lb-color">Wyszukiwanie zaawansowane</p>
-                    <button class="p-btn">Znajdź pojazd</button>
-                </div>
-
-
-            </div>
-        </div>
-        </div>
     </header>
 
     <!-- Products -->
     <section id="main">
         <div class="container header">
             <div class="row justify-content-between">
-                <div class="col-md-md-auto">
+                <div class="col-md-auto">
                     <h1>Przeglądaj samochody</h1>
                 </div>
-                <div class="col-md-md-auto">
+                <div class="col-md-auto index-main-dropdown">
 
                     <div class="dropdown">
                         <p class="lb-color dropbtn">
@@ -201,7 +236,7 @@
         </div>
 
         <div class="container c-container">
-            <div class="p-card">
+            <div class="p-card" onclick="location.href='/product_card.html'">
                 <div class="img-sec">
                     <img src="assets/images/products/p01.svg" alt="" />
                 </div>
@@ -211,12 +246,32 @@
                     <p class="p-type">Sport</p>
 
                     <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
+
+                        <div class="icon-c">
+                            <img src="assets/images/icons/bluetooth.svg" alt="" class="i-bluettoth" />
+                            <p class="icon-tt bluetooth-tt">Bluetooth</p>
+                        </div>
+
+                        <div class="icon-c">
+                            <img src="assets/images/icons/seat.svg" alt="" class="i-seat" />
+                            <p class="icon-tt seat-tt">Seat</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/gps.svg" alt="" class="i-gps" />
+                            <p class="icon-tt gps-tt">Gps</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/safety.svg" alt="" class="i-safety" />
+                            <p class="icon-tt safety-tt">Safety</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/radio.svg" alt="" class="i-radio" />
+                            <p class="icon-tt radio-tt">Radio</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/ac.svg" alt="" class="i-ac" />
+                            <p class="icon-tt ac-tt">AC</p>
+                        </div>
                     </div>
 
                     <div class="details-div">
@@ -255,7 +310,7 @@
                 <div class="details-sec">
                     <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
                     <p class="p-type">Sport</p>
-
+                    <!-- 
                     <div class="icons-div">
                         <img src="assets/images/icons/bluetooth.svg" alt="" />
                         <img src="assets/images/icons/seat.svg" alt="" />
@@ -268,7 +323,36 @@
                         <img src="assets/images/icons/pillow.svg" alt="" />
                         <img src="assets/images/icons/camera.svg" alt="" />
                         <img src="assets/images/icons/lock.svg" alt="" />
+                    </div> -->
+
+
+                    <div class="icons-div">
+                        <div class="icon-c">
+                            <img src="assets/images/icons/bluetooth.svg" alt="" onmouseover="showToolTip( `Bluettoth`)" />
+                            <p class="icon-tt">Bluettoth</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/seat.svg" alt="" />
+                            <p class="icon-tt">Seat</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/gps.svg" alt="" />
+                            <p class="icon-tt">Gps</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/safety.svg" alt="" />
+                            <p class="icon-tt">Safety</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/radio.svg" alt="" />
+                            <p class="icon-tt">Radio</p>
+                        </div>
+                        <div class="icon-c">
+                            <img src="assets/images/icons/ac.svg" alt="" />
+                            <p class="icon-tt">AC</p>
+                        </div>
                     </div>
+
 
                     <div class="details-div">
                         <ul>
@@ -800,49 +884,38 @@
 
     </section>
 
-    <!-- Marquee -->
-    <div class="container">
-        <div class="marquee">
-            <section class="marquee-content">
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m1.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m2.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m3.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m4.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m5.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m6.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m7.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m8.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m9.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m10.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m11.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m12.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m13.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m14.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m15.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m16.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m17.svg" /></a>
-            </section>
-            <section class="marquee-content">
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m1.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m2.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m3.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m4.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m5.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m6.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m7.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m8.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m9.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m10.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m11.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m12.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m13.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m14.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m15.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m16.svg" /></a>
-                <a class="marquee-block"><img class="marquee-logo" src="assets/images/m17.svg" /></a>
-            </section>
+    <!-- Company available list logo-->
+
+
+    <section class="index-company-list">
+
+        <div class="container">
+            <div class="row">
+                <div class="col h-flex-sb">
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m1.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m2.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m3.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m4.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m5.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m6.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m7.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m8.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m9.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m10.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m11.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m12.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m13.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m14.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m15.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m16.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m17.svg" /></a>
+                </div>
+            </div>
         </div>
-    </div>
+
+    </section>
+
+
     <!-- Available brands -->
     <div class="container available-barnds-container pb-50">
         <h1>Dostępne marki</h1>
@@ -882,38 +955,44 @@
     <footer class="footer">
         <div class="container">
             <div class="row footer-header mb-50">
-                <div class="col-md-sm-7">
+                <div class="col-md-7">
                     <h1>Masz jakieś pytania?</h1>
                 </div>
-                <div class="col-md-sm-5">
+                <div class="col-md-5">
                     <p>Masz jakiekolwiek pytania dotyczące naszego portalu? Nie wiesz, jak wybrać odpowiedni samochód? Napisz do nas — chętnie odpowiemy na wszystkie Twoje pytania.</p>
-                    <button class="btn p-btn">Napisz do nas</button>
+                    <button class="btn p-btn">
+                       <a href="mailto:cars4europe@cars4europe.com"> Napisz do nas</a></button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-sm-2">
-                    <img src="assets/images/brand logo.svg" alt="" class="mb-30">
-
+                <div class="col-md-2">
+                    <a href="">
+                        <img src="assets/images/brand logo.svg" alt="" class="mb-30">
+                    </a>
                     <div class="h-flex-sb">
-                        <p>Zmień język</p>
-                        <img src="assets/images/flag logo.svg" alt="">
+                        <a href="">
+                            <p>Zmień język</p>
+                        </a>
+                        <a href="">
+                            <img src="assets/images/flag logo.svg" alt="">
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-sm-5 offset-1">
+                <div class="col-md-5 offset-1">
                     <ul class="footer-ul">
-                        <li>O nas</li>
-                        <li>Jak to działa?</li>
-                        <li>Kariera</li>
-                        <li>Dla komisów</li>
-                        <li>Blog</li>
-                        <li>Logowanie/rejestracja</li>
-                        <li>Oferta</li>
-                        <li>Kontakt</li>
-                        <li>Polityka prywatności</li>
+                        <li> <a href="">O nas</a></li>
+                        <li> <a href="">Jak to działa?</a></li>
+                        <li> <a href="">Kariera</a></li>
+                        <li> <a href="">Dla komisów</a></li>
+                        <li> <a href="">Blog</a></li>
+                        <li> <a href="">Logowanie/rejestracja</a></li>
+                        <li> <a href="">Oferta</a></li>
+                        <li> <a href="">Kontakt</a></li>
+                        <li> <a href="">Polityka prywatności</a></li>
 
                     </ul>
                 </div>
-                <div class="col-md-sm-2 offset-1">
+                <div class="col-md-2 offset-1">
                     <a href="#" class="footer-link">cars4europe@cars4europe.com</a>
                     <div class="h-flex-s mt-20">
                         <img src="assets/images/instagram (1) 1.svg" alt="" class="social-icon">
@@ -923,10 +1002,10 @@
                 </div>
             </div>
             <div class="row copyright mt-30">
-                <div class="col-md-md-auto">
+                <div class="col-md-auto">
                     <p>© Copyright 2022 - Cars 4 Europe</p>
                 </div>
-                <div class="col-md-md-auto offset-1">
+                <div class="col-md-auto offset-1">
                     <p>Realizacja: AdWise</p>
                 </div>
             </div>
