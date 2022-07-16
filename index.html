@@ -8,1016 +8,839 @@
     <title>cars 4 Europe | home</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 960px)" href="assets/css/responsive.css" />
 
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header id="index-header">
-
-        <!-- Navbar -->
-        <nav class="navbar navbar-trans navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="assets/images/brand logo.svg" alt="Cars 4 Europe" /></a>
-                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                        <a class="nav-link" href="#">O nas</a>
-                        <a class="nav-link" href="#">Jak to działa?</a>
-                        <a class="nav-link" href="#">Oferta</a>
-                        <a class="nav-link" href="#">Dla komisów</a>
-                        <a class="nav-link" href="#">Blog</a>
-                        <a class="nav-link" href="#">Kontakt</a>
-
-                    </div>
+    <!-- nav-bar -->
+    <div class="main-nav">
+        <div class="container">
+            <nav class="navbar">
+                <div class="l-part">
+                    <a href="index.php">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
                 </div>
-                <button class="btn btn-sm p-btn" type="button">
-                    <img src="assets/images/person icon.svg" alt="" /> Zaloguj się
-                  </button>
-            </div>
-        </nav>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">O nas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Jak to działa?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Oferta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Dla komisów</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Kontakt</a>
+                        </li>
 
-        <!-- Form -->
-        <div class="container ">
+                    </ul>
+                </div>
+                <div class="r-part">
+                    <ul class="ot__nav">
+                        <li>
+                            <button type="button" class="navbar-toggler">
+                                <div class="menu-icon">
+                                    <div class="line-1 no-animation"></div>
+                                    <div class="line-2 no-animation"></div>
+                                    <div class="line-3 no-animation"></div>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="main-btn with-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" fill="none"
+                                    viewBox="0 0 15 18">
+                                    <path fill="#fff"
+                                        d="M7.387 8.67c1.19 0 2.22-.427 3.061-1.27a4.198 4.198 0 0 0 1.269-3.065c0-1.19-.427-2.222-1.269-3.065A4.188 4.188 0 0 0 7.387 0c-1.19 0-2.22.427-3.062 1.27a4.197 4.197 0 0 0-1.269 3.065 4.2 4.2 0 0 0 1.269 3.066 4.19 4.19 0 0 0 3.062 1.27ZM5.07 2.017c.646-.647 1.404-.961 2.317-.961.912 0 1.67.314 2.316.96.646.648.96 1.406.96 2.32 0 .914-.314 1.673-.96 2.32-.646.646-1.404.96-2.316.96-.913 0-1.67-.314-2.317-.96a3.137 3.137 0 0 1-.96-2.32c0-.914.314-1.672.96-2.32Zm9.894 11.823c-.025-.35-.074-.733-.146-1.137a8.989 8.989 0 0 0-.28-1.143 5.655 5.655 0 0 0-.47-1.067 4.021 4.021 0 0 0-.707-.923 3.121 3.121 0 0 0-1.017-.64 3.512 3.512 0 0 0-1.299-.236c-.183 0-.36.076-.703.3l-.734.473a4.2 4.2 0 0 1-.948.418 3.764 3.764 0 0 1-1.16.188c-.386 0-.776-.064-1.16-.188a4.187 4.187 0 0 1-.949-.418c-.273-.175-.52-.334-.734-.474-.342-.223-.52-.299-.703-.299-.468 0-.904.08-1.299.236a3.119 3.119 0 0 0-1.017.64 4.02 4.02 0 0 0-.708.923 5.665 5.665 0 0 0-.47 1.067 8.993 8.993 0 0 0-.278 1.143c-.073.404-.122.787-.146 1.138-.024.344-.036.702-.036 1.063 0 .94.298 1.7.887 2.261.58.554 1.35.835 2.284.835h8.657c.935 0 1.704-.281 2.285-.835.589-.56.887-1.321.887-2.261 0-.363-.012-.72-.036-1.063Zm-1.577 2.561c-.384.366-.894.544-1.559.544H3.171c-.664 0-1.174-.178-1.558-.544-.376-.359-.56-.848-.56-1.497 0-.337.012-.67.034-.99a9.596 9.596 0 0 1 .377-2.032 4.61 4.61 0 0 1 .382-.868c.153-.267.328-.497.52-.682a2.07 2.07 0 0 1 .677-.421c.249-.099.527-.153.83-.16.037.019.103.056.21.126.216.141.465.302.741.479a5.25 5.25 0 0 0 1.191.533c.49.158.989.239 1.485.239a4.8 4.8 0 0 0 1.484-.24c.48-.154.88-.334 1.191-.532.283-.181.525-.338.742-.48a3.3 3.3 0 0 1 .21-.126c.302.008.58.062.83.16.267.107.495.249.676.422.193.185.368.414.52.682.16.281.288.573.382.867.098.308.181.647.246 1.009.066.366.11.711.132 1.024.022.319.033.652.033.99 0 .649-.183 1.138-.56 1.497Z" />
+                                </svg>
+                                <span>Zaloguj się</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <img src="assets/images/header-bg.jpg" class="header-bg" alt="" />
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 index-header-form-div mt-30">
-                    <div class="col-md-12">
-
-                        <h1 class="pb-20">Jakiego auta szukasz?</h1>
-                    </div>
-
-                    <div class="col-md-12 tabs">
-                        <button id="header-tab1" onclick="switchHeaderForm(1)" class="header-tab-active ">
-                            <p >
-                                <img src="assets/images/car logo.svg" alt="" /> Osobowe
-                            </p>
-                    </button>
-
-                        <button id="header-tab2" onclick="switchHeaderForm(2)" class="header-tab-inactive r-tab">
-                        <p><img src="assets/images/truck logo.svg" alt="" /> Dostawcze</p>
-                    </button>
-                    </div>
-
-                    <div class="col-md-12">
-                        <form action="" id="header-form1">
+                <div class="col-lg-6 col-md-10 col-12">
+                    <form sction="" class="header-form">
+                        <h3>Jakiego auta szukasz?</h3>
+                        <div class="car-r">
+                            <div class="cr-wrap">
+                                <input type="radio" name="car" checked id="osobowe" />
+                                <label for="osobowe">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                        viewBox="0 0 32 32">
+                                        <path fill="#1774FF" d="M13.311 14.372h2.13v1.067h-2.13v-1.067Z" />
+                                        <path fill="#1774FF"
+                                            d="m31.49 12.778-3.617-.518a18.427 18.427 0 0 0-2.05-1.088 17.905 17.905 0 0 0-7.418-1.6h-.628c-3.02.002-5.99.761-8.642 2.208l-1.825.997a12.563 12.563 0 0 0-6.089 1.654A2.436 2.436 0 0 0 0 16.539v3.167c0 .295.238.534.533.534H2.32a3.182 3.182 0 0 0 6.008 0h14.225a3.182 3.182 0 0 0 6.008 0h.19a.533.533 0 0 0 .199-.038l1.724-.694a2.017 2.017 0 0 0 1.273-1.882v-4.32a.533.533 0 0 0-.457-.528ZM7.41 19.6a2.13 2.13 0 1 1-4.173-.855 2.13 2.13 0 1 1 4.173.855Zm9.627-.427H8.52c0-1.767-1.43-3.2-3.195-3.2a3.198 3.198 0 0 0-3.194 3.2H1.065v-2.634c0-.488.262-.94.685-1.182a11.496 11.496 0 0 1 5.704-1.518h9.584v5.334Zm0-6.4H9.542l.103-.057a17.001 17.001 0 0 1 7.393-2.054v2.11Zm1.065-2.134h.301a16.826 16.826 0 0 1 6.265 1.202l-.93.932h-5.636v-2.134Zm9.54 8.96a2.13 2.13 0 1 1-4.172-.854 2.13 2.13 0 1 1 4.173.855Zm3.239-5.226h-1.598v1.066h1.598v2.187a.955.955 0 0 1-.603.891l-1.527.615c0-.05-.006-.098-.01-.147-.003-.049-.004-.107-.01-.16-.005-.053-.015-.107-.024-.16-.008-.053-.015-.107-.025-.155-.01-.049-.026-.103-.04-.153-.014-.05-.025-.102-.04-.152-.017-.05-.036-.097-.054-.145l-.053-.147c-.019-.048-.044-.092-.066-.137-.023-.045-.044-.095-.07-.14-.024-.047-.053-.086-.077-.128a1.68 1.68 0 0 0-.083-.135c-.03-.044-.059-.079-.088-.118-.03-.04-.063-.086-.096-.127-.034-.041-.066-.073-.1-.107-.032-.033-.07-.079-.106-.116-.037-.037-.073-.067-.11-.1-.036-.033-.076-.072-.116-.107-.04-.034-.082-.06-.122-.091-.04-.03-.081-.063-.124-.091-.042-.029-.09-.054-.136-.084a1.58 1.58 0 0 0-.126-.076c-.043-.023-.097-.047-.146-.07-.049-.024-.087-.045-.133-.064-.045-.02-.106-.04-.16-.058-.053-.02-.087-.035-.133-.049-.06-.019-.122-.032-.184-.047-.04-.01-.08-.023-.12-.031-.066-.014-.133-.021-.2-.03-.039-.006-.077-.015-.116-.019a3.2 3.2 0 0 0-3.52 3.184h-4.26V13.84h5.856a.531.531 0 0 0 .376-.156l1.381-1.383c.58.276 1.143.585 1.688.925a.528.528 0 0 0 .206.075l3.27.468v.604Z" />
+                                    </svg>
+                                    <span>Osobowe</span>
+                                </label>
+                            </div>
+                            <div class="cr-wrap">
+                                <input type="radio" name="car" id="dostawcze" />
+                                <label for="dostawcze">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                        viewBox="0 0 32 32">
+                                        <path fill="#1774FF"
+                                            d="m1.002 15.126 2.357-1.574 2.698-5.928a2.118 2.118 0 0 1 1.905-1.18H29.87c1.177 0 2.13.955 2.13 2.134v14.4a.533.533 0 0 1-.532.534h-2.854a3.181 3.181 0 0 1-6.007 0H10.51a3.181 3.181 0 0 1-6.007 0H.586a.533.533 0 0 1-.533-.533v-6.4a1.68 1.68 0 0 1 .949-1.453Zm3.64-1.748h3.93a.533.533 0 0 0 .533-.533v-2.667a.533.533 0 0 0-.532-.533H6.505l-1.863 3.733Zm18.882 9.494a2.13 2.13 0 1 0 4.173-.854 2.13 2.13 0 1 0-4.173.854Zm-18.103 0a2.13 2.13 0 1 0 4.173-.854 2.13 2.13 0 1 0-4.173.854Zm-4.303-2.56h2.13v1.067h-2.13v1.066h3.195c0-1.767 1.43-3.2 3.194-3.2a3.197 3.197 0 0 1 3.195 3.2h11.714c0-1.767 1.43-3.2 3.195-3.2a3.197 3.197 0 0 1 3.194 3.2h2.13V21.38h-1.597v-1.067h1.597v-3.734h-19.7v-1.066h19.7V8.578c0-.59-.477-1.067-1.065-1.067H7.962a1.053 1.053 0 0 0-.944.572l-.224.495h1.778c.883 0 1.598.716 1.598 1.6v2.667a1.6 1.6 0 0 1-1.598 1.6H3.94l-2.35 1.569c-.013.009-.022.021-.035.031h1.16c.295 0 .533.239.533.533v2.134a.533.533 0 0 1-.532.533H1.118v1.067Zm0-2.134h1.065v-1.066H1.118v1.067Z" />
+                                        <path fill="#1774FF"
+                                            d="M10.17 15.512H7.507v1.067h2.663v-1.067Zm11.714 4.801h-10.65v1.066h10.65v-1.067Z" />
+                                    </svg>
+                                    <span>Dostawcze</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cr-container">
                             <div class="row">
-                                <div class="label-input-div col-md-6">
-
-                                    <label for="company">Marka</label>
-                                    <div class="dropdown" id="index-header-d1">
-                                        <a class="lb-color dropbtn h-flex-sb" onclick="triggerDropdown()" id="index-header-d1-btn">
-                                            <p id="index-header-d1-btn-p"> Honda</p>
-                                            <img src="assets/images/arrow down select.svg" alt="" id="open-dd">
-                                            <a id="hcs-clear-btn" onclick="clearDD()"><img src="assets/images/select cross.svg" alt=""></a>
-
-                                        </a>
-                                        <div class="dropdown-content" id="index-header-d1-con">
-                                            <a onclick="setDropdownVal(`Civic`)" style="border-top:  1px solid #39379a4d;" class="pt-10">Civic</a>
-                                            <a onclick="setDropdownVal(`Accord`)">Accord</a>
-                                            <a onclick="setDropdownVal(`City`)">City</a>
-
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="" class="label-text">
+                                            Marka
+                                        </label>
+                                        <div class="custom-selectbox-wrap">
+                                            <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                <span class="selected-value">Wpisz ID</span>
+                                                <img class="drop" src="assets/images/arrow down select.svg" alt=""
+                                                    id="open-dd">
+                                                <span class="clear-btn"><img src="assets/images/select cross.svg"
+                                                        alt=""></span>
+                                            </a>
+                                            <div class="custom-select-droplist">
+                                                <a class="select-option" data-value="Civic">Civic</a>
+                                                <a class="select-option" data-value="Accord">Accord</a>
+                                                <a class="select-option" data-value="City">City</a>
+                                            </div>
+                                            <input type="text" name="marka" />
                                         </div>
                                     </div>
-
-
-                                    <!-- <select name="" id="home-company-select" onclick="setSelectBtn()">
-                                    <option disabled selected value = "0"> -- select an option -- </option>
-                    <option value="lorem1">lorem1</option>
-                    <option value="lorem2" onclick="setSelectBtn()">lorem2</option>
-                    <option value="lorem3" onclick="setSelectBtn()">lorem3</option>
-                    <option value="lorem4" onclick="setSelectBtn()">lorem4</option>
-                  </select> -->
-                                    <span id="hcs-clear-btn" class="select-btn" onclick="clearSelect()"><img src="assets/images/select cross.svg" alt=""></span>
-
                                 </div>
-
-                                <div class="label-input-div col-md-6">
-                                    <label for="model">Model</label>
-                                    <select name="" id="model" placeholder="Wybierz">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
-                  </select>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="" class="label-text">
+                                            Model
+                                        </label>
+                                        <div class="custom-selectbox-wrap">
+                                            <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                <span class="selected-value">Wpisz ID</span>
+                                                <img class="drop" src="assets/images/arrow down select.svg" alt=""
+                                                    id="open-dd">
+                                                <span class="clear-btn"><img src="assets/images/select cross.svg"
+                                                        alt=""></span>
+                                            </a>
+                                            <div class="custom-select-droplist">
+                                                <a class="select-option" data-value="Civic">Civic</a>
+                                                <a class="select-option" data-value="Accord">Accord</a>
+                                                <a class="select-option" data-value="City">City</a>
+                                            </div>
+                                            <input type="text" name="marka" />
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="label-input-div col-md-6">
-                                    <label for="type">Rodzaj paliwa</label>
-                                    <select name="" id="type" placeholder="Wybierz">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
-                  </select>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group mb-0">
+                                        <label for="" class="label-text">
+                                            Rodzaj paliwa
+                                        </label>
+                                        <div class="custom-selectbox-wrap">
+                                            <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                <span class="selected-value">Wpisz ID</span>
+                                                <img class="drop" src="assets/images/arrow down select.svg" alt=""
+                                                    id="open-dd">
+                                                <span class="clear-btn"><img src="assets/images/select cross.svg"
+                                                        alt=""></span>
+                                            </a>
+                                            <div class="custom-select-droplist">
+                                                <a class="select-option" data-value="Civic">Civic</a>
+                                                <a class="select-option" data-value="Accord">Accord</a>
+                                                <a class="select-option" data-value="City">City</a>
+                                            </div>
+                                            <input type="text" name="marka" />
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="label-input-div col-md-6">
-                                    <label for="product-id">ID ogłoszenia</label>
-                                    <input type="number" id="product-id" placeholder="Wpisz ID" />
-                                </div>
-                            </div>
-
-                        </form>
-                        <form action="" id="header-form2">
-                            <div class="row">
-                                <div class="label-input-div col-md-6">
-
-                                    <label for="company">Marka</label>
-                                    <select name="" id="home-company-select" onclick="setSelectBtn()">
-                                    <option disabled selected value = "0"> -- select an option -- </option>
-                    <option value="lorem1">lorem1</option>
-                    <option value="lorem2" onclick="setSelectBtn()">lorem2</option>
-                    <option value="lorem3" onclick="setSelectBtn()">lorem3</option>
-                    <option value="lorem4" onclick="setSelectBtn()">lorem4</option>
-                  </select>
-                                    <span id="hcs-clear-btn" class="select-btn" onclick="clearSelect()"><img src="assets/images/select cross.svg" alt=""></span>
-
-                                </div>
-
-                                <div class="label-input-div col-md-6">
-                                    <label for="model">Model</label>
-                                    <select name="" id="model" placeholder="Wybierz">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
-                  </select>
-                                </div>
-
-                                <div class="label-input-div col-md-6">
-                                    <label for="type">Rodzaj paliwa</label>
-                                    <select name="" id="type" placeholder="Wybierz">
-                    <option value="">lorem1</option>
-                    <option value="">lorem2</option>
-                    <option value="">lorem3</option>
-                    <option value="">lorem4</option>
-                  </select>
-                                </div>
-
-                                <div class="label-input-div col-md-6">
-                                    <label for="product-id">ID ogłoszenia</label>
-                                    <input type="text" id="product-id" placeholder="numver" />
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group mb-0">
+                                        <label for="" class="label-text">
+                                            ID ogłoszenia
+                                        </label>
+                                        <div class="input-grp">
+                                            <input type="text" placeholder="Wpisz ID" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                        </form>
-
-                    </div>
-
-                    <div class="row px-3">
-                        <div class="col-md-8 submit-form-div">
-                            <p class="lb-color">Wyszukiwanie zaawansowane</p>
                         </div>
-                        <div class="col-md-4 submit-form-div">
-
-                            <button class="p-btn">Znajdź pojazd</button>
+                        <div class="cr-footer">
+                            <a href="javascript:void(0)" class="main-btn link-btn">
+                                Wyszukiwanie zaawansowane
+                            </a>
+                            <a href="javascript:void(0)" class="main-btn">
+                                Znajdź pojazd
+                            </a>
                         </div>
-                    </div>
-
-
+                    </form>
                 </div>
+
             </div>
         </div>
-
-        <!-- Header Overlay -->
-        <div class=" conatiner index-header-overlay">
-
-            <div class="row justify-content-end">
-                <div class="col-md-5">
-                    <p class="pb-10">
-                        Kupuj samochody online i wybierz dostawę do swojego salonu.
-                        <span class="bold"> 100% gwarancji zgodności </span>samochodu ze stanem faktycznym.
-                    </p>
+        <div class="head-bt">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-5 col-12">
+                        <p class="para">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Products -->
-    <section id="main">
-        <div class="container header">
-            <div class="row justify-content-between">
-                <div class="col-md-auto">
-                    <h1>Przeglądaj samochody</h1>
-                </div>
-                <div class="col-md-auto index-main-dropdown">
-
-                    <div class="dropdown">
-                        <p class="lb-color dropbtn">
-                            SORTUJ
-                            <img src="assets/images/light-blue-down-arrow.svg" alt="" />
-                        </p>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container c-container">
-            <div class="p-card" onclick="location.href='/product_card.html'">
-                <div class="img-sec">
-                    <img src="assets/images/products/p01.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-
-                        <div class="icon-c">
-                            <img src="assets/images/icons/bluetooth.svg" alt="" class="i-bluettoth" />
-                            <p class="icon-tt bluetooth-tt">Bluetooth</p>
-                        </div>
-
-                        <div class="icon-c">
-                            <img src="assets/images/icons/seat.svg" alt="" class="i-seat" />
-                            <p class="icon-tt seat-tt">Seat</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/gps.svg" alt="" class="i-gps" />
-                            <p class="icon-tt gps-tt">Gps</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/safety.svg" alt="" class="i-safety" />
-                            <p class="icon-tt safety-tt">Safety</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/radio.svg" alt="" class="i-radio" />
-                            <p class="icon-tt radio-tt">Radio</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/ac.svg" alt="" class="i-ac" />
-                            <p class="icon-tt ac-tt">AC</p>
-                        </div>
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <a href="/product_card.html">
-                            <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" /></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p02.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-                    <!-- 
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-                        <img src="assets/images/icons/lock.svg" alt="" />
-                    </div> -->
-
-
-                    <div class="icons-div">
-                        <div class="icon-c">
-                            <img src="assets/images/icons/bluetooth.svg" alt="" onmouseover="showToolTip( `Bluettoth`)" />
-                            <p class="icon-tt">Bluettoth</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/seat.svg" alt="" />
-                            <p class="icon-tt">Seat</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/gps.svg" alt="" />
-                            <p class="icon-tt">Gps</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/safety.svg" alt="" />
-                            <p class="icon-tt">Safety</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/radio.svg" alt="" />
-                            <p class="icon-tt">Radio</p>
-                        </div>
-                        <div class="icon-c">
-                            <img src="assets/images/icons/ac.svg" alt="" />
-                            <p class="icon-tt">AC</p>
-                        </div>
-                    </div>
-
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p03.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p04.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p05.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p06.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-                        <img src="assets/images/icons/lock.svg" alt="" />
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p07.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-                        <img src="assets/images/icons/lock.svg" alt="" />
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p08.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p09.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p10.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p11.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-                        <img src="assets/images/icons/lock.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-            <div class="p-card">
-                <div class="img-sec">
-                    <img src="assets/images/products/p12.svg" alt="" />
-                </div>
-
-                <div class="details-sec">
-                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
-                    <p class="p-type">Sport</p>
-
-                    <div class="icons-div">
-                        <img src="assets/images/icons/bluetooth.svg" alt="" />
-                        <img src="assets/images/icons/seat.svg" alt="" />
-                        <img src="assets/images/icons/gps.svg" alt="" />
-                        <img src="assets/images/icons/safety.svg" alt="" />
-                        <img src="assets/images/icons/radio.svg" alt="" />
-                        <img src="assets/images/icons/ac.svg" alt="" />
-                        <img src="assets/images/icons/cast.svg" alt="" />
-                        <img src="assets/images/icons/sensor.svg" alt="" />
-                        <img src="assets/images/icons/pillow.svg" alt="" />
-                        <img src="assets/images/icons/camera.svg" alt="" />
-                        <img src="assets/images/icons/lock.svg" alt="" />
-
-                    </div>
-
-                    <div class="details-div">
-                        <ul>
-                            <li class="lb-color">ID: 234512</li>
-                            <li>2022</li>
-                            <li>Diesel</li>
-                            <li>1997 cm</li>
-                            <li>241 km</li>
-                            <li>142 222 km</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="link-sec">
-                    <div class="up-div">
-                        <p class="title">Zobacz cenę</p>
-                        <div class="fav-div">
-                            <img src="assets/images/star.svg" alt="" />
-                            <p class="g-color">Obserwuj</p>
-                        </div>
-                    </div>
-
-                    <div class="down-div">
-                        <img src="assets/images/db-arrow-up.svg" alt="" class="arrow-btn" />
-                    </div>
-                </div>
-            </div>
-
-
-            <ul class="pagination-bar h-flex-e">
-                <li class="prev-btn"><img src="assets/images/pagination next.svg" alt=""></li>
-                <li class="page-active">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>...</li>
-                <li>21</li>
-                <li>22</li>
-                <li class="next-btn"><img src="assets/images/pagination next.svg" alt=""></li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- Company available list logo-->
-
-
-    <section class="index-company-list">
-
+    <section class="sec car-listing-sec">
         <div class="container">
             <div class="row">
-                <div class="col h-flex-sb">
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m1.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m2.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m3.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m4.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m5.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m6.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m7.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m8.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m9.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m10.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m11.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m12.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m13.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m14.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m15.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m16.svg" /></a>
-                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/m17.svg" /></a>
+                <div class="col-12">
+                    <div class="sec-head-wrap">
+                        <h3 class="sec-head">
+                            Przeglądaj samochody
+                        </h3>
+                        <span href="javascript:void(0)" class="arrow-btn">
+                            <span>SORTUJ</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none"
+                                viewBox="0 0 12 12">
+                                <path fill="#1774FF" d="m.728-.001 10.91 10.91-.728.727L0 .726z" />
+                                <path fill="#1774FF" d="M.364 10.835H12v1.164H.364z" />
+                                <path fill="#1774FF" d="M12 .361v11.636h-1.164V.361z" />
+                            </svg>
+                            <ul class="drop-list">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Najnowsze
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Najstarsze
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Cena - rosnąco
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Cena - malejąco
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-6 col-12">
+                    <div class="car-card" data-url="#">
+                        <div class="car-img">
+                            <img src="assets/images/products/p01.svg" alt="" />
+                        </div>
+                        <div class="r-part">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                viewBox="0 0 32 32">
+                                <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                            </svg>
+                            <div class="details">
+                                <div class="lp">
+                                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
+                                    <p class="category">Sport</p>
+                                    <div class="icons-wrapper">
+                                        <div class="icons-div">
+                                            <div class="icon-c" data-tootltip="Bluetooth">
+                                                <img src="assets/images/icons/bluetooth.svg" alt=""
+                                                    class="i-bluettoth" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Seat">
+                                                <img src="assets/images/icons/seat.svg" alt="" class="i-seat" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Gps">
+                                                <img src="assets/images/icons/gps.svg" alt="" class="i-gps" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Safety">
+                                                <img src="assets/images/icons/safety.svg" alt="" class="i-safety" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Radio">
+                                                <img src="assets/images/icons/radio.svg" alt="" class="i-radio" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="AC">
+                                                <img src="assets/images/icons/ac.svg" alt="" class="i-ac" />
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                            viewBox="0 0 32 32">
+                                            <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                            <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                            <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rp">
+                                    <a href="">Zobacz cenę</a>
+                                    <div class="star-c">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                            viewBox="0 0 18 18">
+                                            <path fill="#02B302"
+                                                d="M17.974 6.52a.527.527 0 0 0-.425-.359l-5.58-.81L9.472.293a.527.527 0 0 0-.946 0L6.031 5.35l-5.58.811a.527.527 0 0 0-.292.9l4.038 3.936-.953 5.557a.527.527 0 0 0 .765.556L9 14.486l4.99 2.624a.526.526 0 0 0 .766-.556l-.953-5.557L17.84 7.06a.527.527 0 0 0 .133-.54Zm-5.106 3.915a.527.527 0 0 0-.152.467l.82 4.777-4.29-2.255a.528.528 0 0 0-.491 0l-4.291 2.255.82-4.777a.527.527 0 0 0-.152-.467L1.66 7.05l4.797-.697a.527.527 0 0 0 .397-.288L9 1.719l2.145 4.347a.528.528 0 0 0 .397.288l4.797.697-3.471 3.384Z" />
+                                        </svg>
+                                        <span>Obserwuj</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-bottom">
+                                <ul class="dt-list">
+                                    <li class="lb-color">ID: 234512</li>
+                                    <li>2022</li>
+                                    <li>Diesel</li>
+                                    <li>1997 cm</li>
+                                    <li>241 km</li>
+                                    <li>142 222 km</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-6 col-12">
+                    <div class="car-card" data-url="#">
+
+                        <div class="car-img">
+                            <img src="assets/images/car2.jpg" alt="" />
+                        </div>
+                        <div class="r-part">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                viewBox="0 0 32 32">
+                                <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                            </svg>
+                            <div class="details">
+                                <div class="lp">
+                                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport</p>
+                                    <p class="category">Sport</p>
+                                    <div class="icons-wrapper">
+                                        <div class="icons-div">
+                                            <div class="icon-c" data-tootltip="Bluetooth">
+                                                <img src="assets/images/icons/bluetooth.svg" alt=""
+                                                    class="i-bluettoth" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Seat">
+                                                <img src="assets/images/icons/seat.svg" alt="" class="i-seat" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Gps">
+                                                <img src="assets/images/icons/gps.svg" alt="" class="i-gps" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Safety">
+                                                <img src="assets/images/icons/safety.svg" alt="" class="i-safety" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Radio">
+                                                <img src="assets/images/icons/radio.svg" alt="" class="i-radio" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="AC">
+                                                <img src="assets/images/icons/ac.svg" alt="" class="i-ac" />
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                            viewBox="0 0 32 32">
+                                            <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                            <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                            <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rp">
+                                    <a href="">Zobacz cenę</a>
+                                    <div class="star-c">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                            viewBox="0 0 18 18">
+                                            <path fill="#02B302"
+                                                d="M17.974 6.52a.527.527 0 0 0-.425-.359l-5.58-.81L9.472.293a.527.527 0 0 0-.946 0L6.031 5.35l-5.58.811a.527.527 0 0 0-.292.9l4.038 3.936-.953 5.557a.527.527 0 0 0 .765.556L9 14.486l4.99 2.624a.526.526 0 0 0 .766-.556l-.953-5.557L17.84 7.06a.527.527 0 0 0 .133-.54Zm-5.106 3.915a.527.527 0 0 0-.152.467l.82 4.777-4.29-2.255a.528.528 0 0 0-.491 0l-4.291 2.255.82-4.777a.527.527 0 0 0-.152-.467L1.66 7.05l4.797-.697a.527.527 0 0 0 .397-.288L9 1.719l2.145 4.347a.528.528 0 0 0 .397.288l4.797.697-3.471 3.384Z" />
+                                        </svg>
+                                        <span>Obserwuj</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-bottom">
+                                <ul class="dt-list">
+                                    <li class="lb-color">ID: 234512</li>
+                                    <li>2022</li>
+                                    <li>Diesel</li>
+                                    <li>1997 cm</li>
+                                    <li>241 km</li>
+                                    <li>142 222 km</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-6 col-12">
+                    <div class="car-card" data-url="#">
+
+                        <div class="car-img">
+                            <img src="assets/images/car3.jpg" alt="" />
+                        </div>
+                        <div class="r-part">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                viewBox="0 0 32 32">
+                                <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                            </svg>
+                            <div class="details">
+                                <div class="lp">
+                                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport Sport</p>
+                                    <div class="icons-wrapper">
+                                        <div class="icons-div">
+                                            <div class="icon-c" data-tootltip="Bluetooth">
+                                                <img src="assets/images/icons/bluetooth.svg" alt=""
+                                                    class="i-bluettoth" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Seat">
+                                                <img src="assets/images/icons/seat.svg" alt="" class="i-seat" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Gps">
+                                                <img src="assets/images/icons/gps.svg" alt="" class="i-gps" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Safety">
+                                                <img src="assets/images/icons/safety.svg" alt="" class="i-safety" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Radio">
+                                                <img src="assets/images/icons/radio.svg" alt="" class="i-radio" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="AC">
+                                                <img src="assets/images/icons/ac.svg" alt="" class="i-ac" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Snow">
+                                                <img src="assets/images/snow.svg" alt="" class="i-ac" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Cast">
+                                                <img src="assets/images/cast.svg" alt="" class="i-ac" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Reverse">
+                                                <img src="assets/images/back-camera.svg" alt="" class="i-ac" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="360 Camera">
+                                                <img src="assets/images/top-car.svg" alt="" class="i-ac" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Back Camera">
+                                                <img src="assets/images/camera.svg" alt="" class="i-ac" />
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                            viewBox="0 0 32 32">
+                                            <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                            <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                            <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rp">
+                                    <a href="">Zobacz cenę</a>
+                                    <div class="star-c">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                            viewBox="0 0 18 18">
+                                            <path fill="#02B302"
+                                                d="M17.974 6.52a.527.527 0 0 0-.425-.359l-5.58-.81L9.472.293a.527.527 0 0 0-.946 0L6.031 5.35l-5.58.811a.527.527 0 0 0-.292.9l4.038 3.936-.953 5.557a.527.527 0 0 0 .765.556L9 14.486l4.99 2.624a.526.526 0 0 0 .766-.556l-.953-5.557L17.84 7.06a.527.527 0 0 0 .133-.54Zm-5.106 3.915a.527.527 0 0 0-.152.467l.82 4.777-4.29-2.255a.528.528 0 0 0-.491 0l-4.291 2.255.82-4.777a.527.527 0 0 0-.152-.467L1.66 7.05l4.797-.697a.527.527 0 0 0 .397-.288L9 1.719l2.145 4.347a.528.528 0 0 0 .397.288l4.797.697-3.471 3.384Z" />
+                                        </svg>
+                                        <span>Obserwuj</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-bottom">
+                                <ul class="dt-list">
+                                    <li class="lb-color">ID: 234512</li>
+                                    <li>2022</li>
+                                    <li>Diesel</li>
+                                    <li>1997 cm</li>
+                                    <li>241 km</li>
+                                    <li>142 222 km</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-6 col-12">
+                    <div class="car-card" data-url="#">
+
+                        <div class="car-img">
+                            <img src="assets/images/products/p01.svg" alt="" />
+                        </div>
+                        <div class="r-part">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                viewBox="0 0 32 32">
+                                <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                            </svg>
+                            <div class="details">
+                                <div class="lp">
+                                    <p class="title">BMW Seria 5 520d XDrive MHEV M Sport Sport</p>
+                                    <div class="icons-wrapper">
+                                        <div class="icons-div">
+                                            <div class="icon-c" data-tootltip="Bluetooth">
+                                                <img src="assets/images/icons/bluetooth.svg" alt=""
+                                                    class="i-bluettoth" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Seat">
+                                                <img src="assets/images/icons/seat.svg" alt="" class="i-seat" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Gps">
+                                                <img src="assets/images/icons/gps.svg" alt="" class="i-gps" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Safety">
+                                                <img src="assets/images/icons/safety.svg" alt="" class="i-safety" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="Radio">
+                                                <img src="assets/images/icons/radio.svg" alt="" class="i-radio" />
+                                            </div>
+                                            <div class="icon-c" data-tootltip="AC">
+                                                <img src="assets/images/icons/ac.svg" alt="" class="i-ac" />
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                            viewBox="0 0 32 32">
+                                            <path fill="#212EA0" d="M0 30.061 29.09.971l1.94 1.94L1.94 32z" />
+                                            <path fill="#212EA0" d="M28.898 31.03V0h3.103v31.03z" />
+                                            <path fill="#212EA0" d="M.969.001h31.03v3.103H.969z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rp">
+                                    <a href="">Zobacz cenę</a>
+                                    <div class="star-c">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                            viewBox="0 0 18 18">
+                                            <path fill="#02B302"
+                                                d="M17.974 6.52a.527.527 0 0 0-.425-.359l-5.58-.81L9.472.293a.527.527 0 0 0-.946 0L6.031 5.35l-5.58.811a.527.527 0 0 0-.292.9l4.038 3.936-.953 5.557a.527.527 0 0 0 .765.556L9 14.486l4.99 2.624a.526.526 0 0 0 .766-.556l-.953-5.557L17.84 7.06a.527.527 0 0 0 .133-.54Zm-5.106 3.915a.527.527 0 0 0-.152.467l.82 4.777-4.29-2.255a.528.528 0 0 0-.491 0l-4.291 2.255.82-4.777a.527.527 0 0 0-.152-.467L1.66 7.05l4.797-.697a.527.527 0 0 0 .397-.288L9 1.719l2.145 4.347a.528.528 0 0 0 .397.288l4.797.697-3.471 3.384Z" />
+                                        </svg>
+                                        <span>Obserwuj</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-bottom">
+                                <ul class="dt-list">
+                                    <li class="lb-color">ID: 234512</li>
+                                    <li>2022</li>
+                                    <li>Diesel</li>
+                                    <li>1997 cm</li>
+                                    <li>241 km</li>
+                                    <li>142 222 km</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-6 col-12">
+                    <ul class="pagination-wrap">
+                        <li>
+                            <a href="javascript:void(0)" class="page">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="page">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="page">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="page disable">
+                                ...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="page">
+                                21
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="page">
+                                22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
+                                    viewBox="0 0 40 40">
+                                    <path fill="#1774FF" d="M0 0h40v40H0z" />
+                                    <path fill="#F8F9FC" d="M11.842 19.714h15.427v1.029H11.842z" />
+                                    <path fill="#F8F9FC" d="m19.248 27.633 8.228-8.228.823.823-8.228 8.228z" />
+                                    <path fill="#F8F9FC" d="m20.07 12 8.228 8.228-.823.823-8.228-8.228z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec company-logo-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col company-logo-wrap">
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo1.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo2.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo3.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo4.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo5.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo6.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo7.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo8.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo9.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo10.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo11.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo12.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo13.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo14.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo15.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo16.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo17.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo18.jpg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo" src="assets/images/logo19.jpg" /></a>
                 </div>
             </div>
         </div>
 
     </section>
 
-
     <!-- Available brands -->
-    <div class="container available-barnds-container pb-50">
-        <h1>Dostępne marki</h1>
-        <div class="row">
-            <ul class="available-barnds">
-                <li class="brand-li">Audi</li>
-                <li class="brand-li">BMW</li>
-                <li class="brand-li">Volkswagen</li>
-                <li class="brand-li">Opel</li>
-                <li class="brand-li">Ford</li>
-                <li class="brand-li">Mercedez-Benz</li>
-                <li class="brand-li">Renault</li>
-                <li class="brand-li">Skoda</li>
-                <li class="brand-li">Toyota</li>
-                <li class="brand-li">Peugeot</li>
-                <li class="brand-li">Citroen</li>
-                <li class="brand-li">Volvo</li>
-                <li class="brand-li">Hyundai</li>
-                <li class="brand-li">Kia</li>
-                <li class="brand-li">Nissan</li>
-                <li class="brand-li">Fiat</li>
-                <li class="brand-li">Seat</li>
-                <li class="brand-li">Mazda</li>
-                <li class="brand-li">Honda</li>
-                <li class="brand-li">Suzuki</li>
-                <li class="brand-li">Jeep</li>
-                <li class="brand-li">Dacia</li>
-                <li class="brand-li">Mitsubishi</li>
-                <li class="brand-li">chevrolet</li>
-                <li class="brand-li">Alfa Romeo</li>
-                <li class="brand-li">MINI</li>
-                <li class="brand-li">Land Rover</li>
-            </ul>
+    <div class="sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-head-wrap">
+                        <h3 class="sec-head">Dostępne marki</h3>
+                    </div>
+                    <ul class="available-barnds">
+                        <li class="brand-li">Audi</li>
+                        <li class="brand-li">BMW</li>
+                        <li class="brand-li">Volkswagen</li>
+                        <li class="brand-li">Opel</li>
+                        <li class="brand-li">Ford</li>
+                        <li class="brand-li">Mercedez-Benz</li>
+                        <li class="brand-li">Renault</li>
+                        <li class="brand-li">Skoda</li>
+                        <li class="brand-li">Toyota</li>
+                        <li class="brand-li">Peugeot</li>
+                        <li class="brand-li">Citroen</li>
+                        <li class="brand-li">Volvo</li>
+                        <li class="brand-li">Hyundai</li>
+                        <li class="brand-li">Kia</li>
+                        <li class="brand-li">Nissan</li>
+                        <li class="brand-li">Fiat</li>
+                        <li class="brand-li">Seat</li>
+                        <li class="brand-li">Mazda</li>
+                        <li class="brand-li">Honda</li>
+                        <li class="brand-li">Suzuki</li>
+                        <li class="brand-li">Jeep</li>
+                        <li class="brand-li">Dacia</li>
+                        <li class="brand-li">Mitsubishi</li>
+                        <li class="brand-li">chevrolet</li>
+                        <li class="brand-li">Alfa Romeo</li>
+                        <li class="brand-li">MINI</li>
+                        <li class="brand-li">Land Rover</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
             <div class="row footer-header mb-50">
-                <div class="col-md-7">
-                    <h1>Masz jakieś pytania?</h1>
+                <div class="col-lg-7 col-12">
+                    <h1 class="sec-head">Masz jakieś pytania?</h1>
                 </div>
-                <div class="col-md-5">
-                    <p>Masz jakiekolwiek pytania dotyczące naszego portalu? Nie wiesz, jak wybrać odpowiedni samochód? Napisz do nas — chętnie odpowiemy na wszystkie Twoje pytania.</p>
-                    <button class="btn p-btn">
-                       <a href="mailto:cars4europe@cars4europe.com"> Napisz do nas</a></button>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <p class="para">Masz jakiekolwiek pytania dotyczące naszego portalu? Nie wiesz, jak wybrać odpowiedni samochód?
+                        Napisz do nas — chętnie odpowiemy na wszystkie Twoje pytania.</p>
+                        <a href="mailto:cars4europe@cars4europe.com" class="main-btn"> Napisz do nas</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-lg-3 col-md-4 col-6">
                     <a href="">
-                        <img src="assets/images/brand logo.svg" alt="" class="mb-30">
+                        <img src="assets/images/brand logo.svg" class="ft-logo" alt="" class="mb-30">
                     </a>
                     <div class="h-flex-sb">
-                        <a href="">
+                        <a href="" class="flag-text">
                             <p>Zmień język</p>
-                        </a>
-                        <a href="">
                             <img src="assets/images/flag logo.svg" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-5 offset-1">
+                <div class="col-lg-2 col-md-4 col-6">
                     <ul class="footer-ul">
                         <li> <a href="">O nas</a></li>
                         <li> <a href="">Jak to działa?</a></li>
                         <li> <a href="">Kariera</a></li>
-                        <li> <a href="">Dla komisów</a></li>
-                        <li> <a href="">Blog</a></li>
-                        <li> <a href="">Logowanie/rejestracja</a></li>
-                        <li> <a href="">Oferta</a></li>
-                        <li> <a href="">Kontakt</a></li>
-                        <li> <a href="">Polityka prywatności</a></li>
-
                     </ul>
                 </div>
-                <div class="col-md-2 offset-1">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <ul class="footer-ul">
+                        <li> <a href="">Jak to działa?</a></li>
+                        <li> <a href="">Blog</a></li>
+                        <li> <a href="">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <ul class="footer-ul">
+                        <li> <a href="">Kariera</a></li>
+                        <li> <a href="">Logowanie/rejestracja</a></li>
+                        <li> <a href="">Polityka prywatności</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
                     <a href="#" class="footer-link">cars4europe@cars4europe.com</a>
                     <div class="h-flex-s mt-20">
-                        <img src="assets/images/instagram (1) 1.svg" alt="" class="social-icon">
-                        <img src="assets/images/facebook (1) 1.svg" alt="" class="social-icon">
-                        <img src="assets/images/linkedin (1) 1.svg" alt="" class="social-icon">
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/instagram (1) 1.svg" alt="" class="social-icon">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/facebook (1) 1.svg" alt="" class="social-icon">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/linkedin (1) 1.svg" alt="" class="social-icon">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="row copyright mt-30">
-                <div class="col-md-auto">
-                    <p>© Copyright 2022 - Cars 4 Europe</p>
+            <div class="row mt-30">
+                <div class="col-lg-3 offset-lg-7 col-6">
+                    <div class="col-md-auto">
+                        <p class="copy-text">© Copyright 2022 - Cars 4 Europe</p>
+                    </div>
                 </div>
-                <div class="col-md-auto offset-1">
-                    <p>Realizacja: AdWise</p>
+                <div class="col-lg-2  col-6">
+                    <div class="col-md-auto offset-1">
+                        <p class="copy-text">Realizacja: AdWise</p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+        let menuIcon = document.querySelector(".menu-icon");
+        let lines = Array.from(menuIcon.children);
 
+        function toggleMenu(e) {
+            lines.forEach(line => {
+                menuIcon.classList.toggle("active");
+                line.classList.toggle("active");
+                line.classList.toggle("no-animation");
+            });
 
-    <!-- Custom JS -->
-    <script src="assets/js/app.js"></script>
+        }
+        menuIcon.addEventListener("click", toggleMenu);
+
+        $('.menu-icon').click(function () {
+            $('.navbar-collapse').slideToggle();
+        });
+
+        if ($('.custom-selectbox-wrap').length) {
+            $('.custom-selectbox-wrap').each(function () {
+                var thisEl = $(this);
+                var droplist = $(this).find('.custom-select-droplist');
+                var selectedValEl = $(this).find('.custom-selectbox-input .selected-value');
+                var selectInput = $(this).find('.custom-selectbox-input');
+                var input = $(this).find('input');
+                var options = $(this).find('.custom-select-droplist .select-option');
+                var clearBtn = $(this).find('.clear-btn');
+
+                options.each(function () {
+                    $(this).click(function () {
+                        var selectVal = $(this).data('value');
+                        $(this).siblings().removeClass('active');
+                        $(this).addClass('active');
+                        setInputVal(selectedValEl, input, selectVal, thisEl);
+                    })
+                });
+                clearBtn.click(function () {
+                    input.val('');
+                    setInputVal(selectedValEl, input, '', thisEl);
+                    selectClose(thisEl);
+                });
+                selectInput.click(function () {
+                    $('.custom-selectbox-wrap').removeClass('active');
+                    selectOpen(thisEl);
+                });
+            });
+
+            function setInputVal(el, input, selectVal, prent) {
+                if (selectVal != '') {
+                    el.html(selectVal);
+                    input.val(selectVal);
+                    prent.addClass('has-selected-val');
+                } else {
+                    el.html('Select Marko');
+                    input.val(selectVal);
+                    prent.removeClass('has-selected-val');
+                    prent.find('.select-option').removeClass('active');
+                }
+                selectClose(prent);
+                console.log("input-val", input.val());
+            }
+
+            function selectOpen(el) {
+                el.addClass('active');
+            }
+
+            function selectClose(el) {
+                el.removeClass('active');
+            }
+            $('html').click(function (event) {
+                if ($(event.target).closest('.custom-selectbox-wrap').length === 0) {
+                    $('.custom-selectbox-wrap').removeClass('active');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

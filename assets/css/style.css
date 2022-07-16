@@ -1,41 +1,12 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    --p-black: #141414;
-    --p-white: #f8f9fc;
-    --m-blue: #212ea0;
-    --l-blue: #1774ff;
-    --p-green: #02b302;
-    --gotham-medium: gotham-medium;
-    --gotham-book: gotham-book;
-}
-
-@font-face {
-    font-family: gotham-medium;
-    src: url(/assets/fonts/Gotham\ Medium.otf);
-}
-
-@font-face {
-    font-family: gotham-book;
-    src: url(/assets/fonts/GothamBook.ttf);
-}
-
-@font-face {
-    font-family: temp;
-    src: url(/assets/fonts/Poppins-Regular.ttf);
-}
 
 body {
-    font-family: var(--gotham-book);
+     
     position: relative;
 }
 
 h1 {
-    font-family: var(--gotham-book);
+     
     font-size: 2.1rem;
 }
 
@@ -55,7 +26,7 @@ a:hover {
 }
 
 .bold {
-    font-family: var(--gotham-medium);
+     
 }
 
 .lb-color {
@@ -842,9 +813,7 @@ input::-webkit-inner-spin-button {
 
 /* index-company-list */
 
-.index-company-list {
-    padding: 100px 0px;
-}
+
 
 .index-company-list .company-list-item {
     /* padding: 10px; */
@@ -863,14 +832,14 @@ input::-webkit-inner-spin-button {
 
 .available-barnds {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
 }
 
 .available-barnds .brand-li {
-    width: 16.6666%;
-    padding: 7px;
+    width: 100%;
+    padding: 0.6rem 0px;
 }
 
 .available-barnds .brand-li a {
@@ -902,20 +871,21 @@ input::-webkit-inner-spin-button {
 
 .footer-ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .footer-ul li {
-    width: 33.3333%;
     padding: 7px 0px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .footer-ul li a {
     text-decoration: none;
     color: var(--p-white);
+    transition: 0.2s ease-in-out;
+}
+.footer-ul li a:hover{
+    color: var(--light-blue);
 }
 
 .footer .footer-link {
@@ -942,7 +912,8 @@ input::-webkit-inner-spin-button {
 
 #pc-main {
     background-color: var(--p-white);
-    padding: 50px 0px;
+    padding: 30px 0px;
+    padding-bottom: 50px;
 }
 
 
@@ -954,13 +925,14 @@ input::-webkit-inner-spin-button {
 
 .pc-breadcrumb .bc-back-btn {
     text-decoration: none;
-    color: var(--m-blue);
+    color: var(--blue);
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 20px;
+    text-transform: uppercase;
 }
 
-.pc-breadcrumb .bc-back-btn img {
+.pc-breadcrumb .bc-back-btn svg {
     width: 8px;
     padding: 0;
     margin-right: 5px;
@@ -968,19 +940,19 @@ input::-webkit-inner-spin-button {
 
 .pc-breadcrumb .bc-btn {
     text-decoration: none;
-    color: var(--m-blue);
+    color: var(--blue);
     text-transform: capitalize;
     padding: 0;
     margin: 10px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .pc-breadcrumb .bc-arrow {
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
-.pc-breadcrumb .bc-arrow img {
-    width: 7px;
+.pc-breadcrumb .bc-arrow svg {
+    width: 7px !important;
 }
 
 .pc-content-div {
@@ -1124,9 +1096,9 @@ input::-webkit-inner-spin-button {
 }
 
 .pc-main-info {
-    padding: 40px 0px 0px;
-    margin-top: 40px;
-    border-top: 1px solid #212ea02a;
+    /* padding: 40px 0px 0px; */
+    /* margin-top: 40px; */
+    /* border-top: 1px solid #212ea02a; */
 }
 
 .pc-main-info .col-4 {
@@ -1211,7 +1183,7 @@ input::-webkit-inner-spin-button {
     color: var(--p-white);
 }
 
-#pc-contact-us .pc-contact-form {
+/* #pc-contact-us .pc-contact-form {
     border-left: 2px solid #636dc528;
 }
 
@@ -1230,11 +1202,11 @@ input::-webkit-inner-spin-button {
     background-color: var(--p-green);
     margin: 10px 0px;
     width: auto;
-}
+} */
 
 .swiper {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .swiper-slide {
@@ -1265,7 +1237,7 @@ input::-webkit-inner-spin-button {
 
 .swiper {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -1286,7 +1258,7 @@ input::-webkit-inner-spin-button {
 }
 
 .mySwiper2 {
-    height: 80%;
+    /* height: 80%; */
     width: 100%;
 }
 
