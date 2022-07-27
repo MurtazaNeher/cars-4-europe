@@ -219,16 +219,16 @@
                       <label for="" class="label-text"> Rodzaj paliwa </label>
                       <div class="custom-selectbox-wrap">
                         <a
-                          class="custom-selectbox-input"
+                          class="custom-selectbox-input multiple-selection"
                           id="index-header-d1-btn"
                         >
                           <span class="selected-value">Wybierz</span>
-                          <img
+                          <!-- <img
                             class="drop"
                             src="assets/images/arrow down select.svg"
                             alt=""
                             id="open-dd"
-                          />
+                          /> -->
                           <span class="clear-btn"
                             ><img src="assets/images/select cross.svg" alt=""
                           /></span>
@@ -1332,15 +1332,6 @@
               $(".custom-selectbox-wrap").removeClass("active");
               selectOpen(thisEl);
             });
-
-            // Multiple Seletion
-
-            optionsMultiple.each(function () {
-              $(this).on("click", function () {
-                var selectVal = `Wybrano ( ${scount} )`;
-                setMultipleInputVal(selectedValEl, input, selectVal, thisEl);
-              });
-            });
           });
 
           function setInputVal(el, input, selectVal, prent) {
@@ -1358,20 +1349,20 @@
             inputChanged(prent);
           }
 
-          function setMultipleInputVal(el, input, selectVal, prent) {
-            if (selectVal != "") {
-              el.html(selectVal);
-              input.val(selectVal);
-              prent.addClass("has-selected-val");
-            } else {
-              el.html("Wybierz");
-              input.val(selectVal);
-              prent.removeClass("has-selected-val");
-              // prent.find(".select-option").removeClass("active");
-            }
-            // selectClose(prent);
-            inputChanged(prent);
-          }
+          // function setMultipleInputVal(el, input, selectVal, prent) {
+          //   if (selectVal != "") {
+          //     el.html(selectVal);
+          //     input.val(selectVal);
+          //     prent.addClass("has-selected-val");
+          //   } else {
+          //     el.html("Wybierz");
+          //     input.val(selectVal);
+          //     prent.removeClass("has-selected-val");
+          //     // prent.find(".select-option").removeClass("active");
+          //   }
+          //   // selectClose(prent);
+          //   inputChanged(prent);
+          // }
           function selectOpen(el) {
             el.addClass("active");
           }
@@ -1503,7 +1494,10 @@
     </script>
 
     <script>
-      let scount = 0;
+      let selectedValEl = $(this).find(
+        ".custom-selectbox-input .selected-value"
+      );
+      var scount = 0;
 
       $(".select-option-multiple").on("click", function () {
         if ($(this).hasClass("inactive")) {
@@ -1515,7 +1509,22 @@
           $(this).addClass("inactive");
           scount--;
         }
+        if (scount > 0) {
+          $(".multiple-selection").html(`Wybrano ( ${scount} )`);
+            $(".multiple-selection").css("opacity", "1");
+
+        } else {
+          $(".multiple-selection").html("Wybierz");
+          $(".multiple-selection").css("opacity", "0.6");
+        }
       });
+
+      // optionsMultiple.each(function () {
+      //         $(this).on("click", function () {
+      //           var selectVal = `Wybrano ( ${scount} )`;
+      //           setMultipleInputVal(selectedValEl, input, selectVal, thisEl);
+      //         });
+      //       });
     </script>
   </body>
 </html>
