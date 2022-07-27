@@ -39,7 +39,7 @@ function switchHeaderForm(num) {
 
 // Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
-    loop: false,
+    loop: true,
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
@@ -50,7 +50,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         0:{
-            slidesPerView: 0,
+            slidesPerView: 3,
             spaceBetween: 10,
         },
         640: {
@@ -68,7 +68,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 var swiper2 = new Swiper(".mySwiper2", {
-    loop: false,
+    loop: true,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",

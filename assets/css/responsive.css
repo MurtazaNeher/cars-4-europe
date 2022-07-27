@@ -266,13 +266,74 @@ p {
     .navbar .r-part .ot__nav .main-btn span{
         font-size: 12px;
     }
+    .reg-form-wrap{
+        padding-right: 1rem;
+    }
+    .if-login-wrap{
+        padding-left: 1rem;
+    }
+    .if-login-wrap h4{
+        font-size: 22px;
+    }
 }
 @media(max-width: 767px){
     .available-barnds{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .reg-form-wrap{
+        border: none;
+        border-bottom: 1px solid rgba(33, 46, 160, 0.1);
+        padding: 0 !important;
+        padding-bottom: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    .if-login-wrap{
+        padding: 0rem !important;
+    }
+    .bl-box-wrap .para{
+        font-size: 12px !important;
+    }
 }
 @media(max-width: 600px){
+    .arrow-btn svg{
+        min-width: 20px;
+    }
+    .filter-sec{
+        padding-top: 1em !important;
+    }
+    .filter-wrap .show-more-btn{
+        margin-top: 20px !important;
+    }
+    .company-logo-wrap{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+    .company-logo-wrap > a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow-list {
+        position: relative;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(33, 46, 160, 0.1);
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+      }
+    .swiper .swiper-button-next, .swiper .swiper-button-prev{
+        display: flex !important;
+    }
+    .sidebar-header button{
+        width: 20px;
+    }
+    .sidebar{
+        padding: 2em 1em !important;
+        padding-top: 0 !important;
+    }
+    .sidebar-header .sidebar-title{
+        font-size: 26px;
+    }
     .main-header .header-form .car-r .cr-wrap label{
         padding: 0.4rem 0.7rem;
     }
@@ -359,6 +420,7 @@ p {
     }
     .main-header .header-form{
         padding: 1rem;
+        margin-bottom: 1rem;
     }
     .main-header .header-form .cr-container{
         padding: 1rem 0px;

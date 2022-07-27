@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cars 4 Europe | home</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+</head>
+
+<body class="w-bg">
+    <!-- nav-bar -->
+    <div class="main-nav inner-nav without-bg ">
+        <div class="container">
+            <nav class="navbar">
+                <div class="l-part">
+                    <a href="index.php">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">O nas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Jak to działa?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Oferta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Dla komisów</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">Kontakt</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="r-part">
+                    <ul class="ot__nav">
+                        <li>
+                            <button type="button" class="navbar-toggler">
+                                <div class="menu-icon">
+                                    <div class="line-1 no-animation"></div>
+                                    <div class="line-2 no-animation"></div>
+                                    <div class="line-3 no-animation"></div>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="/Logowanie.html" class="main-btn with-icon sideFormOpen" data-target="#rside">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" fill="none"
+                                    viewBox="0 0 15 18">
+                                    <path fill="#fff"
+                                        d="M7.387 8.67c1.19 0 2.22-.427 3.061-1.27a4.198 4.198 0 0 0 1.269-3.065c0-1.19-.427-2.222-1.269-3.065A4.188 4.188 0 0 0 7.387 0c-1.19 0-2.22.427-3.062 1.27a4.197 4.197 0 0 0-1.269 3.065 4.2 4.2 0 0 0 1.269 3.066 4.19 4.19 0 0 0 3.062 1.27ZM5.07 2.017c.646-.647 1.404-.961 2.317-.961.912 0 1.67.314 2.316.96.646.648.96 1.406.96 2.32 0 .914-.314 1.673-.96 2.32-.646.646-1.404.96-2.316.96-.913 0-1.67-.314-2.317-.96a3.137 3.137 0 0 1-.96-2.32c0-.914.314-1.672.96-2.32Zm9.894 11.823c-.025-.35-.074-.733-.146-1.137a8.989 8.989 0 0 0-.28-1.143 5.655 5.655 0 0 0-.47-1.067 4.021 4.021 0 0 0-.707-.923 3.121 3.121 0 0 0-1.017-.64 3.512 3.512 0 0 0-1.299-.236c-.183 0-.36.076-.703.3l-.734.473a4.2 4.2 0 0 1-.948.418 3.764 3.764 0 0 1-1.16.188c-.386 0-.776-.064-1.16-.188a4.187 4.187 0 0 1-.949-.418c-.273-.175-.52-.334-.734-.474-.342-.223-.52-.299-.703-.299-.468 0-.904.08-1.299.236a3.119 3.119 0 0 0-1.017.64 4.02 4.02 0 0 0-.708.923 5.665 5.665 0 0 0-.47 1.067 8.993 8.993 0 0 0-.278 1.143c-.073.404-.122.787-.146 1.138-.024.344-.036.702-.036 1.063 0 .94.298 1.7.887 2.261.58.554 1.35.835 2.284.835h8.657c.935 0 1.704-.281 2.285-.835.589-.56.887-1.321.887-2.261 0-.363-.012-.72-.036-1.063Zm-1.577 2.561c-.384.366-.894.544-1.559.544H3.171c-.664 0-1.174-.178-1.558-.544-.376-.359-.56-.848-.56-1.497 0-.337.012-.67.034-.99a9.596 9.596 0 0 1 .377-2.032 4.61 4.61 0 0 1 .382-.868c.153-.267.328-.497.52-.682a2.07 2.07 0 0 1 .677-.421c.249-.099.527-.153.83-.16.037.019.103.056.21.126.216.141.465.302.741.479a5.25 5.25 0 0 0 1.191.533c.49.158.989.239 1.485.239a4.8 4.8 0 0 0 1.484-.24c.48-.154.88-.334 1.191-.532.283-.181.525-.338.742-.48a3.3 3.3 0 0 1 .21-.126c.302.008.58.062.83.16.267.107.495.249.676.422.193.185.368.414.52.682.16.281.288.573.382.867.098.308.181.647.246 1.009.066.366.11.711.132 1.024.022.319.033.652.033.99 0 .649-.183 1.138-.56 1.497Z" />
+                                </svg>
+                                <span>Zaloguj się</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="filter-sec sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-wrap">
+                        <div class="car-r">
+                            <div class="cr-wrap">
+                                <input type="radio" name="car" checked id="osobowe" value="1" />
+                                <label for="osobowe">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                        viewBox="0 0 32 32">
+                                        <path fill="#1774FF" d="M13.311 14.372h2.13v1.067h-2.13v-1.067Z" />
+                                        <path fill="#1774FF"
+                                            d="m31.49 12.778-3.617-.518a18.427 18.427 0 0 0-2.05-1.088 17.905 17.905 0 0 0-7.418-1.6h-.628c-3.02.002-5.99.761-8.642 2.208l-1.825.997a12.563 12.563 0 0 0-6.089 1.654A2.436 2.436 0 0 0 0 16.539v3.167c0 .295.238.534.533.534H2.32a3.182 3.182 0 0 0 6.008 0h14.225a3.182 3.182 0 0 0 6.008 0h.19a.533.533 0 0 0 .199-.038l1.724-.694a2.017 2.017 0 0 0 1.273-1.882v-4.32a.533.533 0 0 0-.457-.528ZM7.41 19.6a2.13 2.13 0 1 1-4.173-.855 2.13 2.13 0 1 1 4.173.855Zm9.627-.427H8.52c0-1.767-1.43-3.2-3.195-3.2a3.198 3.198 0 0 0-3.194 3.2H1.065v-2.634c0-.488.262-.94.685-1.182a11.496 11.496 0 0 1 5.704-1.518h9.584v5.334Zm0-6.4H9.542l.103-.057a17.001 17.001 0 0 1 7.393-2.054v2.11Zm1.065-2.134h.301a16.826 16.826 0 0 1 6.265 1.202l-.93.932h-5.636v-2.134Zm9.54 8.96a2.13 2.13 0 1 1-4.172-.854 2.13 2.13 0 1 1 4.173.855Zm3.239-5.226h-1.598v1.066h1.598v2.187a.955.955 0 0 1-.603.891l-1.527.615c0-.05-.006-.098-.01-.147-.003-.049-.004-.107-.01-.16-.005-.053-.015-.107-.024-.16-.008-.053-.015-.107-.025-.155-.01-.049-.026-.103-.04-.153-.014-.05-.025-.102-.04-.152-.017-.05-.036-.097-.054-.145l-.053-.147c-.019-.048-.044-.092-.066-.137-.023-.045-.044-.095-.07-.14-.024-.047-.053-.086-.077-.128a1.68 1.68 0 0 0-.083-.135c-.03-.044-.059-.079-.088-.118-.03-.04-.063-.086-.096-.127-.034-.041-.066-.073-.1-.107-.032-.033-.07-.079-.106-.116-.037-.037-.073-.067-.11-.1-.036-.033-.076-.072-.116-.107-.04-.034-.082-.06-.122-.091-.04-.03-.081-.063-.124-.091-.042-.029-.09-.054-.136-.084a1.58 1.58 0 0 0-.126-.076c-.043-.023-.097-.047-.146-.07-.049-.024-.087-.045-.133-.064-.045-.02-.106-.04-.16-.058-.053-.02-.087-.035-.133-.049-.06-.019-.122-.032-.184-.047-.04-.01-.08-.023-.12-.031-.066-.014-.133-.021-.2-.03-.039-.006-.077-.015-.116-.019a3.2 3.2 0 0 0-3.52 3.184h-4.26V13.84h5.856a.531.531 0 0 0 .376-.156l1.381-1.383c.58.276 1.143.585 1.688.925a.528.528 0 0 0 .206.075l3.27.468v.604Z" />
+                                    </svg>
+                                    <span>Osobowe</span>
+                                </label>
+                            </div>
+                            <div class="cr-wrap">
+                                <input type="radio" name="car" id="dostawcze" value="2" />
+                                <label for="dostawcze">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                                        viewBox="0 0 32 32">
+                                        <path fill="#1774FF"
+                                            d="m1.002 15.126 2.357-1.574 2.698-5.928a2.118 2.118 0 0 1 1.905-1.18H29.87c1.177 0 2.13.955 2.13 2.134v14.4a.533.533 0 0 1-.532.534h-2.854a3.181 3.181 0 0 1-6.007 0H10.51a3.181 3.181 0 0 1-6.007 0H.586a.533.533 0 0 1-.533-.533v-6.4a1.68 1.68 0 0 1 .949-1.453Zm3.64-1.748h3.93a.533.533 0 0 0 .533-.533v-2.667a.533.533 0 0 0-.532-.533H6.505l-1.863 3.733Zm18.882 9.494a2.13 2.13 0 1 0 4.173-.854 2.13 2.13 0 1 0-4.173.854Zm-18.103 0a2.13 2.13 0 1 0 4.173-.854 2.13 2.13 0 1 0-4.173.854Zm-4.303-2.56h2.13v1.067h-2.13v1.066h3.195c0-1.767 1.43-3.2 3.194-3.2a3.197 3.197 0 0 1 3.195 3.2h11.714c0-1.767 1.43-3.2 3.195-3.2a3.197 3.197 0 0 1 3.194 3.2h2.13V21.38h-1.597v-1.067h1.597v-3.734h-19.7v-1.066h19.7V8.578c0-.59-.477-1.067-1.065-1.067H7.962a1.053 1.053 0 0 0-.944.572l-.224.495h1.778c.883 0 1.598.716 1.598 1.6v2.667a1.6 1.6 0 0 1-1.598 1.6H3.94l-2.35 1.569c-.013.009-.022.021-.035.031h1.16c.295 0 .533.239.533.533v2.134a.533.533 0 0 1-.532.533H1.118v1.067Zm0-2.134h1.065v-1.066H1.118v1.067Z" />
+                                        <path fill="#1774FF"
+                                            d="M10.17 15.512H7.507v1.067h2.663v-1.067Zm11.714 4.801h-10.65v1.066h10.65v-1.067Z" />
+                                    </svg>
+                                    <span>Dostawcze</span>
+                                </label>
+                            </div>
+                        </div>
+                        <form action="" class="filter-form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="" class="label-text">
+                                                    Marka
+                                                </label>
+                                                <div class="custom-selectbox-wrap" id="marka">
+                                                    <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                        <span class="selected-value">Wybierz</span>
+                                                        <img class="drop" src="assets/images/arrow-down-select.svg"
+                                                            alt="" id="open-dd">
+                                                        <span class="clear-btn"><img
+                                                                src="assets/images/select cross.svg" alt=""></span>
+                                                    </a>
+                                                    <div class="custom-select-droplist">
+                                                        <a class="select-option" data-value="honda">honda</a>
+                                                        <a class="select-option" data-value="fiat">fiat</a>
+                                                        <a class="select-option" data-value="toyota">toyota</a>
+                                                    </div>
+                                                    <input type="text" name="marka" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="" class="label-text">
+                                                    Model
+                                                </label>
+                                                <div class="custom-selectbox-wrap" id="model">
+                                                    <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                        <span class="selected-value">Wybierz</span>
+                                                        <img class="drop" src="assets/images/arrow-down-select.svg"
+                                                            alt="" id="open-dd">
+                                                        <span class="clear-btn"><img
+                                                                src="assets/images/select cross.svg" alt=""></span>
+                                                    </a>
+                                                    <div class="custom-select-droplist">
+
+                                                    </div>
+                                                    <input type="text" name="model" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 cl-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="" class="label-text">
+                                                    Status pojazdu
+                                                </label>
+                                                <div class="custom-selectbox-wrap" id="">
+                                                    <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                        <span class="selected-value">Wybierz</span>
+                                                        <img class="drop" src="assets/images/arrow-down-select.svg"
+                                                            alt="" id="open-dd">
+                                                        <span class="clear-btn"><img
+                                                                src="assets/images/select cross.svg" alt=""></span>
+                                                    </a>
+                                                    <div class="custom-select-droplist">
+                                                        <a class="select-option" data-value="honda">honda</a>
+                                                        <a class="select-option" data-value="fiat">fiat</a>
+                                                        <a class="select-option" data-value="toyota">toyota</a>
+                                                    </div>
+                                                    <input type="text" name="marka" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 cl-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="" class="label-text">
+                                                    Rodzaj paliwa
+                                                </label>
+                                                <div class="custom-selectbox-wrap" id="">
+                                                    <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                        <span class="selected-value">Wybierz</span>
+                                                        <img class="drop" src="assets/images/arrow-down-select.svg"
+                                                            alt="" id="open-dd">
+                                                        <span class="clear-btn"><img
+                                                                src="assets/images/select cross.svg" alt=""></span>
+                                                    </a>
+                                                    <div class="custom-select-droplist">
+                                                        <a class="select-option" data-value="honda">honda</a>
+                                                        <a class="select-option" data-value="fiat">fiat</a>
+                                                        <a class="select-option" data-value="toyota">toyota</a>
+                                                    </div>
+                                                    <input type="text" name="marka" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12 col-12">
+                                    <div class="od-wrap">
+                                        <label for="" class="label-text">Cena</label>
+                                        <div class="odd-inputs">
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <input type="number" name="" id="" placeholder="Od" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <input type="number" name="" id="" placeholder="Do" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="od-wrap">
+                                        <label for="" class="label-text">Pojemność</label>
+                                        <div class="odd-inputs">
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <input type="number" name="" id="" placeholder="Od" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <input type="number" name="" id="" placeholder="Do" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12 col-12">
+                                    <div class="od-wrap">
+                                        <label for="" class="label-text">Rok produkcji</label>
+                                        <div class="odd-inputs">
+                                            <div class="form-group">
+                                                <!-- <div class="input-grp">
+                                                    <select class="sl-cus">
+                                                        <option >1953</option>
+                                                        <option >1922</option>
+                                                        <option >1921</option>
+                                                        <option >1950</option>
+                                                    </select>
+                                                </div> -->
+                                                <div class="input-grp">
+                                                    <input type="search" id="brand-filter" placeholder="Od" name="brands" data-list="brands-list" autocomplete="off"
+                                                        required />
+                                                    <label for="brand-filter" class="s-lab" ></label>
+                                                    <datalist id="brands-list">
+                                                        <select>
+                                                            <option value="1993" />
+                                                            <option value="1994" />
+                                                            <option value="1995" />
+                                                            <option value="2002" />
+                                                            <option value="2007" />
+                                                        </select>
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <!-- <select class="sl-cus">
+                                                        <option>1953</option>
+                                                        <option>1922</option>
+                                                        <option>1921</option>
+                                                        <option>1950</option>
+                                                    </select> -->
+                                                    <div class="input-grp">
+                                                        <input type="search" id="filter2" placeholder="Do" name="brands" data-list="list2" autocomplete="off"
+                                                            required />
+                                                        <label for="filter2" class="s-lab" data-icon=""></label>
+                                                        <datalist id="list2">
+                                                            <select>
+                                                                <option value="1993" />
+                                                                <option value="1994" />
+                                                                <option value="1995" />
+                                                                <option value="2002" />
+                                                                <option value="2007" />
+                                                            </select>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="od-wrap hideInput">
+                                        <label for="" class="label-text">Moc</label>
+                                        <div class="odd-inputs">
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <input type="text" name="" id="" placeholder="Od">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-grp">
+                                                    <input type="text" name="" id="" placeholder="Do">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hideInput">
+                                <div class="row ">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="label-text">
+                                                Skrzynia biegów
+                                            </label>
+                                            <div class="custom-selectbox-wrap" id="">
+                                                <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                    <span class="selected-value">Wybierz</span>
+                                                    <img class="drop" src="assets/images/arrow-down-select.svg" alt=""
+                                                        id="open-dd">
+                                                    <span class="clear-btn"><img src="assets/images/select cross.svg"
+                                                            alt=""></span>
+                                                </a>
+                                                <div class="custom-select-droplist">
+                                                    <a class="select-option" data-value="honda">honda</a>
+                                                    <a class="select-option" data-value="fiat">fiat</a>
+                                                    <a class="select-option" data-value="toyota">toyota</a>
+                                                </div>
+                                                <input type="text" name="marka" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="label-text">
+                                                Napęd
+                                            </label>
+                                            <div class="custom-selectbox-wrap" id="">
+                                                <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                    <span class="selected-value">Wybierz</span>
+                                                    <img class="drop" src="assets/images/arrow-down-select.svg" alt=""
+                                                        id="open-dd">
+                                                    <span class="clear-btn"><img src="assets/images/select cross.svg"
+                                                            alt=""></span>
+                                                </a>
+                                                <div class="custom-select-droplist">
+                                                    <a class="select-option" data-value="honda">honda</a>
+                                                    <a class="select-option" data-value="fiat">fiat</a>
+                                                    <a class="select-option" data-value="toyota">toyota</a>
+                                                </div>
+                                                <input type="text" name="marka" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="label-text">
+                                                Wyposażenie
+                                            </label>
+                                            <div class="custom-selectbox-wrap" id="">
+                                                <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                    <span class="selected-value">Wybierz</span>
+                                                    <img class="drop" src="assets/images/arrow-down-select.svg" alt=""
+                                                        id="open-dd">
+                                                    <span class="clear-btn"><img src="assets/images/select cross.svg"
+                                                            alt=""></span>
+                                                </a>
+                                                <div class="custom-select-droplist">
+                                                    <a class="select-option" data-value="honda">honda</a>
+                                                    <a class="select-option" data-value="fiat">fiat</a>
+                                                    <a class="select-option" data-value="toyota">toyota</a>
+                                                </div>
+                                                <input type="text" name="marka" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="label-text">Szukaj po ID</label>
+                                            <div class="input-grp search-input">
+                                                <input type="text" placeholder="Wpisz ID">
+                                                <button class="search-btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                                        fill="none" viewBox="0 0 23 23">
+                                                        <path fill="#F8F9FC" fill-rule="evenodd"
+                                                            d="M6.456 16.172a6.87 6.87 0 1 0 9.715-9.716 6.87 6.87 0 0 0-9.715 9.716Zm-.8.799A8 8 0 1 0 16.97 5.657 8 8 0 0 0 5.657 16.971Z"
+                                                            clip-rule="evenodd" />
+                                                        <path fill="#F8F9FC"
+                                                            d="m16.617 15.91 5.876 5.876-.8.8-5.876-5.876z" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="show-more-btn"><span>Pokaż więcej filtrów</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none"
+                                        viewBox="0 0 12 12">
+                                        <path fill="#1774FF" d="m.728 0 10.91 10.91-.728.727L0 .727z" />
+                                        <path fill="#1774FF" d="M.364 10.836H12V12H.364z" />
+                                        <path fill="#1774FF" d="M12 .363v11.636h-1.164V.363z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec car-listing-sec bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-head-wrap">
+                        <h3 class="sec-head">
+                            Nie znaleziono ogłoszeń
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p class="para f-green">Spróbuj użyć mniejszej liczby filtrów, aby uzyskać<br>więcej wyników lub <a href="javascript:void(0)">wyczyść fitry wyszukiwania</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec company-logo-sec bg-p-white">
+        <div class="container">
+            <div class="row">
+                <div class="col company-logo-wrap">
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo1.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo2.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo3.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo4.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo5.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo6.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo7.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo8.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo9.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo10.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo11.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo12.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo13.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo14.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo15.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo16.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo17.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo18.svg" /></a>
+                    <a class="company-list-item"><img class="company-list-item-logo"
+                            src="assets/images/logo19.svg" /></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Available brands -->
+    <div class="sec bg-p-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-head-wrap">
+                        <h3 class="sec-head">Dostępne marki</h3>
+                    </div>
+                    <ul class="available-barnds">
+                        <li class="brand-li"><a href="javascript:void(0)">Audi</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">BMW</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Volkswagen</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Opel</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Ford</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Mercedez-Benz</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Renault</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Skoda</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Toyota</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Peugeot</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Citroen</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Volvo</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Hyundai</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Kia</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Nissan</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Fiat</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Seat</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Mazda</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Honda</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Suzuki</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Jeep</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Dacia</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Mitsubishi</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">chevrolet</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Alfa Romeo</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">MINI</a></li>
+                        <li class="brand-li"><a href="javascript:void(0)">Land Rover</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-header mb-50">
+                <div class="col-lg-7 col-12">
+                    <h1 class="sec-head">Masz jakieś pytania?</h1>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <p class="para">Masz jakiekolwiek pytania dotyczące naszego portalu? Nie wiesz, jak wybrać
+                        odpowiedni samochód? Napisz do nas — chętnie odpowiemy na wszystkie Twoje pytania.</p>
+                    <a href="mailto:cars4europe@cars4europe.com" class="main-btn"> Napisz do nas</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="">
+                        <img src="assets/images/brand logo.svg" class="ft-logo" alt="" class="mb-30">
+                    </a>
+                    <div class="h-flex-sb">
+                        <div href="" class="flag-text">
+                            <p>Zmień język</p>
+                            <a href="javascript:void(0)">
+                                <img src="assets/images/flag logo.svg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAwCAMAAACFQszZAAAAElBMVEUBW7v+1QAAWrwAWrj71gD/1QBgOdpAAAAALUlEQVRIie3MRxEAIADAsLL8W8YD1x+NgECSJM+mhCVhSzgShqSoqKio6MPoAgTKCiFmwbuTAAAAAElFTkSuQmCC"
+                                    alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAA9CAMAAABV2o0CAAAAbFBMVEX////IEC4BIWnGACHdjpMAAF7FAA/LytT78vMAGmZITX/HACYAHWfHACjDAAD0292xs8Xx0dPuysrTXGUoM3HEAAfRUl0hL28fK27UY2zPS1YXJWsAFmU4PXa/wdAAAFGoq7/qvr7OQU346OoRarQCAAACy0lEQVRYhe2Zf3ujIAzHozfYnJT+mrZdu85t7/89nohVQEKQ3c7n7mn+tJBPEr7FgHBag2HNgYk8bMVzO+6JZ4Pxp/bBc0FME+zQtOO2p1LNKeV+CyW34ZsjAU9CC3bcKHDNFbnke8XsIpgDT0APYLnKDN5qjGKEvwTgs9GCvVgZD1WuZfegcsp+QeEz0YJdNLiyMu7MLQOV+Sz0LePXnmEn6C4+teYz0K2q+1L7lhW8AgjBo9GIuAbfINjZjKwiyx6JHkrtikv7PTMBxqDKK7jCgUehBSuUz7VPXLeEQA/MQ6WxM49Ah8W1ybU/sAcjgjO3VxI9isvra0gEJhP8kY6CI9CEuIwkBrRRdh4sexDtiMvVTW4unYEmBSe6iQF0OyAmeB9aTT5TgkPRg178S3Z2/6YOmhTJgV386Eu8UDF0TkUv3nzoNxH/98TRxpp5N4SrD30lNTJFM7+9F412xluTst6CZRM0wO5T6sF2oI14RxDwiNn1Uc1c77R9fBHor49+pP12at1gBmnmyfpv2YJoMNGpPh7SrBzRZaIL+JVmmWGJLiBbzO7oO/qO/g/RC+5mC+7hC7650uxfbxWI3mwwu0kLoO0mLdSbBTvSEbyXqtus5OeOzLptxvXgV9XGNgXakQb68BF86hvszhnah5uBqvGrquuh0T4cPX1MHMneUeD0YQRrzYk7fUzB/SHq5gQ9cx1C8+gzV3/SDEVPnTSxaoVPmtjkPvI88nyNaCRwvp5mrCdye2LMrUI4eBdNlGvuXUqE4AADoyKJvUHCfNk3SKi4fGsUf2+GVXC8N8MGVrXaClNvC2nBwTRj7hPXTLQvocoUnLojPcaJazbaIzjHN9g/cjMy/9ef+ffhiOBixZWEpgQ3EVcH/oPfPgqv4GTtiivwpklDo3vGKlZc30Bjgpss/o9+3TPKzkvY6oyz8tS1Mz/9TdOA/waLJGr0GdxbEQAAAABJRU5ErkJggg=="
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <ul class="footer-ul">
+                        <li> <a href="">O nas</a></li>
+                        <li> <a href="">Jak to działa?</a></li>
+                        <li> <a href="">Kariera</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <ul class="footer-ul">
+                        <li> <a href="">Jak to działa?</a></li>
+                        <li> <a href="">Blog</a></li>
+                        <li> <a href="">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <ul class="footer-ul">
+                        <li> <a href="">Kariera</a></li>
+                        <li> <a href="">Logowanie/rejestracja</a></li>
+                        <li> <a href="">Polityka prywatności</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="footer-link">cars4europe@cars4europe.com</a>
+                    <div class="h-flex-s mt-20">
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/instagram (1) 1.svg" alt="" class="social-icon">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/facebook (1) 1.svg" alt="" class="social-icon">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/linkedin (1) 1.svg" alt="" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-lg-3 offset-lg-7 col-6">
+                    <div class="col-md-auto">
+                        <p class="copy-text">© Copyright 2022 - Cars 4 Europe</p>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-6">
+                    <div class="col-md-auto offset-1">
+                        <p class="copy-text">Realizacja: AdWise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar panel-side" tabindex="-1" id="rside">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title" id="offcanvasExampleLabel">Panel klienta</h1>
+
+        </div>
+        <div class="sidebar-body">
+            <div class="s-info-container">
+                <div>
+                    <ul class="s-info-wrap">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="none"
+                                    viewBox="0 0 20 24">
+                                    <path fill="#212EA0"
+                                        d="M9.849 11.56c1.586 0 2.96-.569 4.082-1.693 1.122-1.123 1.692-2.498 1.692-4.087 0-1.588-.57-2.963-1.692-4.087C12.808.57 11.435 0 9.849 0c-1.587 0-2.96.57-4.083 1.693-1.122 1.124-1.691 2.5-1.691 4.087 0 1.589.569 2.964 1.691 4.087 1.123 1.124 2.497 1.694 4.083 1.694Zm-3.09-8.872c.862-.862 1.872-1.282 3.09-1.282 1.217 0 2.227.42 3.089 1.282.861.862 1.28 1.874 1.28 3.092 0 1.219-.419 2.23-1.28 3.093-.862.862-1.872 1.281-3.09 1.281-1.216 0-2.227-.419-3.088-1.281-.862-.862-1.28-1.874-1.28-3.093 0-1.218.418-2.23 1.28-3.092Zm13.193 15.767a14.3 14.3 0 0 0-.195-1.517 11.959 11.959 0 0 0-.372-1.525 7.541 7.541 0 0 0-.626-1.422 5.362 5.362 0 0 0-.944-1.231 4.16 4.16 0 0 0-1.356-.853 4.682 4.682 0 0 0-1.732-.314c-.244 0-.481.1-.938.398-.281.184-.61.396-.978.631-.314.2-.74.388-1.265.558a5.016 5.016 0 0 1-1.547.25 5.02 5.02 0 0 1-1.547-.25c-.525-.17-.95-.357-1.264-.557a132.37 132.37 0 0 1-.978-.632c-.457-.298-.694-.398-.938-.398-.624 0-1.206.105-1.731.314a4.157 4.157 0 0 0-1.357.853 5.362 5.362 0 0 0-.943 1.231c-.26.46-.471.938-.626 1.423-.15.469-.276.981-.373 1.524a14.197 14.197 0 0 0-.194 1.517c-.032.459-.048.936-.048 1.417 0 1.253.398 2.267 1.182 3.015.775.738 1.8 1.113 3.047 1.113H15.77c1.247 0 2.272-.375 3.047-1.113.784-.747 1.182-1.762 1.182-3.015 0-.483-.016-.96-.048-1.417Zm-2.103 3.413c-.512.488-1.191.725-2.078.725H4.23c-.887 0-1.566-.237-2.078-.724-.502-.479-.746-1.132-.746-1.997 0-.45.015-.893.044-1.32.03-.418.088-.877.176-1.365.086-.483.196-.935.327-1.345a6.15 6.15 0 0 1 .51-1.156c.203-.357.436-.663.694-.91.24-.231.544-.42.902-.562a3.23 3.23 0 0 1 1.106-.213c.05.026.137.076.279.168.289.189.622.404.99.64.414.264.949.503 1.587.71a6.421 6.421 0 0 0 1.98.318c.66 0 1.326-.107 1.979-.318.639-.207 1.173-.446 1.588-.711.377-.241.7-.45.99-.639.141-.092.229-.142.278-.168.404.01.775.082 1.106.213.358.142.662.331.903.562.257.247.49.553.693.91.213.375.385.764.51 1.156.131.41.241.863.328 1.344.087.49.146.95.175 1.367.03.425.045.868.045 1.32 0 .864-.244 1.517-.746 1.995Z" />
+                                </svg>
+                                <div class="pr-in">
+                                    <span>
+                                        Jan Kowalski
+                                    </span>
+                                    <p>
+                                        jkowalski@gmail.com MIRCars Sp.z o.o.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none"
+                                    viewBox="0 0 22 21">
+                                    <path fill="#212EA0" stroke="#212EA0" stroke-width=".3"
+                                        d="M20.971 8.245a.586.586 0 0 0-.473-.4l-6.2-.9-2.773-5.618a.586.586 0 0 0-1.05 0L7.702 6.945l-6.2.9a.586.586 0 0 0-.325 1l4.486 4.373-1.059 6.176a.586.586 0 0 0 .85.617L11 17.096l5.545 2.915a.587.587 0 0 0 .85-.617l-1.059-6.175 4.487-4.374a.586.586 0 0 0 .148-.6Zm-5.673 4.35a.586.586 0 0 0-.169.518l.91 5.309-4.766-2.507a.586.586 0 0 0-.546 0L5.96 18.422l.91-5.31a.586.586 0 0 0-.168-.518l-3.857-3.76 5.33-.774a.586.586 0 0 0 .441-.32L11 2.91l2.384 4.83c.085.173.25.292.44.32l5.33.775-3.856 3.76Z" />
+                                </svg>
+                                <span>Obserwowane</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="s-info-wrap plist">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                    viewBox="0 0 16 16">
+                                    <path fill="#212EA0" d="M0 15.03 14.544.486l.97.969L.969 15.999z" />
+                                    <path fill="#212EA0" d="M14.448 15.515V.001h1.551v15.514z" />
+                                    <path fill="#212EA0" d="M.485 0h15.514v1.551H.485z" />
+                                </svg>
+                                <span>Dodaj samochód</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                    viewBox="0 0 16 16">
+                                    <path fill="#212EA0" d="M0 15.03 14.544.486l.97.969L.969 15.999z" />
+                                    <path fill="#212EA0" d="M14.448 15.515V.001h1.551v15.514z" />
+                                    <path fill="#212EA0" d="M.485 0h15.514v1.551H.485z" />
+                                </svg>
+                                <span>Samochody</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                    viewBox="0 0 16 16">
+                                    <path fill="#212EA0" d="M0 15.03 14.544.486l.97.969L.969 15.999z" />
+                                    <path fill="#212EA0" d="M14.448 15.515V.001h1.551v15.514z" />
+                                    <path fill="#212EA0" d="M.485 0h15.514v1.551H.485z" />
+                                </svg>
+                                <span>Kontrakty</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                    viewBox="0 0 16 16">
+                                    <path fill="#212EA0" d="M0 15.03 14.544.486l.97.969L.969 15.999z" />
+                                    <path fill="#212EA0" d="M14.448 15.515V.001h1.551v15.514z" />
+                                    <path fill="#212EA0" d="M.485 0h15.514v1.551H.485z" />
+                                </svg>
+                                <span>Narzędzia</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="s-info-wrap plist bnone">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                    viewBox="0 0 16 16">
+                                    <path fill="#212EA0" d="M0 15.03 14.544.486l.97.969L.969 15.999z" />
+                                    <path fill="#212EA0" d="M14.448 15.515V.001h1.551v15.514z" />
+                                    <path fill="#212EA0" d="M.485 0h15.514v1.551H.485z" />
+                                </svg>
+                                <span>Ustawienia</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="s-info-wrap plist las">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                viewBox="0 0 16 16">
+                                <path fill="#212EA0" d="M0 15.03 14.544.486l.97.969L.969 15.999z" />
+                                <path fill="#212EA0" d="M14.448 15.515V.001h1.551v15.514z" />
+                                <path fill="#212EA0" d="M.485 0h15.514v1.551H.485z" />
+                            </svg>
+                            <span>Wyloguj się</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="side-backdrop sideFormClose"></div>
+
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    
+    <!-- <script src="assets/js/app.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script>
+        $('input[data-list]').each(function () {
+            var availableTags = $('#' + $(this).attr("data-list")).find('option').map(function () {
+                return this.value;
+            }).get();
+
+            $(this).autocomplete({
+                source: availableTags,
+                minLength: 0 ,
+            }).on('focus', function () {
+                $(this).autocomplete('search', $(this).val());
+                console.log("bkjk", $(this).parent().find('datalist'));
+            }).on('search', function () {
+                if ($(this).val() === '') {
+                    $(this).autocomplete('search', $(this).val());
+                }
+            });
+        });
+        $(".sl-cus").select2({
+            allowClear: false
+        });
+        let menuIcon = document.querySelector(".menu-icon");
+        let lines = Array.from(menuIcon.children);
+
+        function toggleMenu(e) {
+            lines.forEach(line => {
+                menuIcon.classList.toggle("active");
+                line.classList.toggle("active");
+                line.classList.toggle("no-animation");
+            });
+
+        }
+        menuIcon.addEventListener("click", toggleMenu);
+
+        $('.menu-icon').click(function () {
+            $('.navbar-collapse').slideToggle();
+        });
+
+        $(window).scroll(function () {
+
+            if ($(window).scrollTop() > 80) {
+                $('.main-nav').addClass('sticky');
+            } else {
+                $('.main-nav').removeClass('sticky');
+            }
+        }).trigger('scroll');
+
+        function customSelect() {
+            if ($('.custom-selectbox-wrap').length) {
+                $('.custom-selectbox-wrap').each(function () {
+                    var thisEl = $(this);
+                    var droplist = $(this).find('.custom-select-droplist');
+                    var selectedValEl = $(this).find('.custom-selectbox-input .selected-value');
+                    var selectInput = $(this).find('.custom-selectbox-input');
+                    var input = $(this).find('input');
+                    var options = $(this).find('.custom-select-droplist .select-option');
+                    var clearBtn = $(this).find('.clear-btn');
+
+                    options.each(function () {
+                        $(this).on('click', function () {
+                            var selectVal = $(this).data('value');
+                            $(this).siblings().removeClass('active');
+                            $(this).addClass('active');
+                            setInputVal(selectedValEl, input, selectVal, thisEl);
+                        })
+                    });
+                    clearBtn.click(function () {
+                        input.val('');
+                        setInputVal(selectedValEl, input, '', thisEl);
+                        selectClose(thisEl);
+                    });
+                    selectInput.click(function () {
+                        $('.custom-selectbox-wrap').removeClass('active');
+                        selectOpen(thisEl);
+                    });
+                });
+
+                function setInputVal(el, input, selectVal, prent) {
+                    if (selectVal != '') {
+                        el.html(selectVal);
+                        input.val(selectVal);
+                        prent.addClass('has-selected-val');
+                    } else {
+                        el.html('Wybierz');
+                        input.val(selectVal);
+                        prent.removeClass('has-selected-val');
+                        prent.find('.select-option').removeClass('active');
+                    }
+                    selectClose(prent);
+                    inputChanged(prent);
+                }
+
+                function selectOpen(el) {
+                    el.addClass('active');
+                }
+
+                function selectClose(el) {
+                    el.removeClass('active');
+                }
+                $('html').click(function (event) {
+                    if ($(event.target).closest('.custom-selectbox-wrap').length === 0) {
+                        $('.custom-selectbox-wrap').removeClass('active');
+                    }
+                });
+            }
+        };
+        customSelect();
+        var bgSwiper = new Swiper(".bg-swiper", {
+            loop: true,
+            spaceBetween: 0,
+            slidesPerView: 1,
+        });
+
+        var dummyJson = {
+            "honda": ["civic", "city", "amaze", "jazz"],
+            "fiat": ["linea", "punto", "palio", "abarth"],
+            "toyota": ["fortuner", "innova", "urban cruiser", "glanza"],
+        };
+
+        function inputChanged(e) {
+
+            var vl = e.find('input').val();
+            var id = e.attr('id');
+            if (id == "marka") {
+                $('#model .custom-select-droplist').html('');
+                $('#model .selected-value').html('Wybierz');
+                $('#model input').val('');
+                if (vl != "") {
+                    var data = Object.keys(dummyJson);
+                    data.forEach(function (f) {
+                        if (vl == f) {
+                            var res = dummyJson[f];
+                            var temp = "";
+                            res.forEach(function (j) {
+                                temp += `<a class="select-option" data-value="${j}">${j}</a>`;
+                            });
+                            $('#model .custom-select-droplist').html(temp);
+                            customSelect();
+                        }
+                    });
+                    // console.log("json", dummyJson[0].data);
+                } else {
+
+                    $('#model').removeClass('has-selected-val');
+                }
+            }
+        }
+        if ($('.show-more-btn').length) {
+            $('.show-more-btn').click(function () {
+
+                $('.filter-wrap').toggleClass('active');
+                $('.hideInput').slideToggle();
+            });
+        }
+
+        $('.sideFormOpen').click(function () {
+            var at = $(this).attr('data-target');
+            $(at).addClass('active');
+            $('.side-backdrop').fadeIn();
+            $('body').css('overflow', 'hidden');
+        });
+        $('.sideFormClose').click(function () {
+            $('.sidebar').removeClass('active');
+            $('.side-backdrop').fadeOut();
+            $('body').css('overflow', 'unset');
+        });
+    </script>
+</body>
+
+</html>

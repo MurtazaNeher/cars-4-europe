@@ -5,11 +5,20 @@
     left: 0;
     z-index: 999;
     background: transparent;
+    transition: 0.2s ease-in-out;
+
+    &.sticky{
+        background: var(--white) !important;
+    }
 
     &.inner-nav{
         background: var(--white);
         position: sticky;
         top: 0;
+
+        &.without-bg{
+            background: transparent;
+        }
     }
 }
 .navbar {
