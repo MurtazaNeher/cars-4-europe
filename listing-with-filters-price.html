@@ -191,17 +191,17 @@
                                                     Rodzaj paliwa
                                                 </label>
                                                 <div class="custom-selectbox-wrap" id="">
-                                                    <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                    <a class="custom-selectbox-input multiple-selection" id="index-header-d1-btn">
                                                         <span class="selected-value">Wybierz</span>
-                                                        <img class="drop" src="assets/images/arrow-down-select.svg"
-                                                            alt="" id="open-dd">
+                                                        <!-- <img class="drop" src="assets/images/arrow-down-select.svg"
+                                                            alt="" id="open-dd"> -->
                                                         <span class="clear-btn"><img
                                                                 src="assets/images/select cross.svg" alt=""></span>
                                                     </a>
                                                     <div class="custom-select-droplist">
-                                                        <a class="select-option" data-value="honda">honda</a>
-                                                        <a class="select-option" data-value="fiat">fiat</a>
-                                                        <a class="select-option" data-value="toyota">toyota</a>
+                                                        <a class="select-option-multiple inactive" data-value="honda">honda</a>
+                                                        <a class="select-option-multiple inactive" data-value="fiat">fiat</a>
+                                                        <a class="select-option-multiple inactive" data-value="toyota">toyota</a>
                                                     </div>
                                                     <input type="text" name="marka" value="" />
                                                 </div>
@@ -342,17 +342,17 @@
                                                 Napęd
                                             </label>
                                             <div class="custom-selectbox-wrap" id="">
-                                                <a class="custom-selectbox-input" id="index-header-d1-btn">
+                                                <a class="custom-selectbox-input multiple-selection" id="index-header-d1-btn">
                                                     <span class="selected-value">Wybierz</span>
-                                                    <img class="drop" src="assets/images/arrow-down-select.svg" alt=""
-                                                        id="open-dd">
+                                                    <!-- <img class="drop" src="assets/images/arrow-down-select.svg" alt=""
+                                                        id="open-dd"> -->
                                                     <span class="clear-btn"><img src="assets/images/select cross.svg"
                                                             alt=""></span>
                                                 </a>
                                                 <div class="custom-select-droplist">
-                                                    <a class="select-option" data-value="honda">honda</a>
-                                                    <a class="select-option" data-value="fiat">fiat</a>
-                                                    <a class="select-option" data-value="toyota">toyota</a>
+                                                    <a class="select-option-multiple inactive" data-value="honda">honda</a>
+                                                    <a class="select-option-multiple inactive" data-value="fiat">fiat</a>
+                                                    <a class="select-option-multiple inactive" data-value="toyota">toyota</a>
                                                 </div>
                                                 <input type="text" name="marka" value="" />
                                             </div>
@@ -1287,6 +1287,40 @@
             $('body').css('overflow', 'unset');
         });
     </script>
+
+<script>
+    let selectedValEl = $(this).find(
+      ".custom-selectbox-input .selected-value"
+    );
+    var scount = 0;
+
+    $(".select-option-multiple").on("click", function () {
+      if ($(this).hasClass("inactive")) {
+        $(this).addClass("active");
+        scount++;
+        $(this).removeClass("inactive");
+      } else {
+        $(this).removeClass("active");
+        $(this).addClass("inactive");
+        scount--;
+      }
+      if (scount > 0) {
+        $(".multiple-selection").html(`Wybrano ( ${scount} )`);
+          $(".multiple-selection").css("opacity", "1");
+
+      } else {
+        $(".multiple-selection").html("Wybierz");
+        $(".multiple-selection").css("opacity", "0.6");
+      }
+    });
+
+    // optionsMultiple.each(function () {
+    //         $(this).on("click", function () {
+    //           var selectVal = `Wybrano ( ${scount} )`;
+    //           setMultipleInputVal(selectedValEl, input, selectVal, thisEl);
+    //         });
+    //       });
+  </script>
 </body>
 
 </html>
